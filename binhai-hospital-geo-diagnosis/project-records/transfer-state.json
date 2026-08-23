@@ -8,10 +8,10 @@
       "action": "drop",
       "sender": "W",
       "receiver": "L",
-      "filename": "X0004_01_L材料更新后重审任务单.md",
-      "checksum": "2b19e05ccbd31e39c1ba6a5e8a1488864baf40564e8d33466a0d7b266ba18a6b",
+      "filename": "X0004_01_审核成员地域口径更新重审任务单_2026-08-23.md",
+      "checksum": "57cc1adbf87b2f56fa37591224fc710ad2b70ec4107744d34c0a94779533a22a",
       "status": "待取",
-      "note": "请按更新后的R0001-R0004重新完成五项审核"
+      "note": "请按更新后的R0001-R0004重新完成五项审核，并专项核对泉州市南安市地域口径"
     }
   ],
   "current_docs": [],
