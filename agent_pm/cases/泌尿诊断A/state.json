@@ -1,0 +1,61 @@
+{
+  "case_id": "泌尿诊断A",
+  "stage": "01",
+  "waiting": "agent",
+  "activity": "material_pending",
+  "current_member": "L",
+  "profiles": {
+    "W": {
+      "member": "W",
+      "pm_level": 0,
+      "geo_level": 0,
+      "tool_level": 0,
+      "mode": "novice",
+      "style": "",
+      "stage_novice": false,
+      "first_pass_streak": 0,
+      "updated_at": "2026-08-21T11:12:18Z"
+    },
+    "L": {
+      "member": "L",
+      "pm_level": 0,
+      "geo_level": 0,
+      "tool_level": 0,
+      "mode": "novice",
+      "style": "",
+      "stage_novice": false,
+      "first_pass_streak": 0,
+      "updated_at": "2026-08-21T11:12:18Z"
+    }
+  },
+  "review": {
+    "current_id": "",
+    "current_result": "",
+    "current_stage": "",
+    "current_checksum": "",
+    "current_record_checksum": "",
+    "seq": 0,
+    "attempts": {},
+    "failures": {}
+  },
+  "fields": {},
+  "gates": {},
+  "log": [
+    {
+      "at": "2026-08-21T11:12:18Z",
+      "op": "init"
+    },
+    {
+      "at": "2026-08-21T11:12:18Z",
+      "op": "profile",
+      "member": "W",
+      "mode": "novice"
+    },
+    {
+      "at": "2026-08-21T11:12:18Z",
+      "op": "profile",
+      "member": "L",
+      "mode": "novice"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+﻿item_id,at,action,sender,receiver,filename,checksum,status,note
+X0001,2026-08-23T09:12:22Z,drop,W,L,X0001_01_L独立审核任务单.md,ee8a12afce00948bf5d465931f7c36eb80fdc5edc98042153fbfa6bf2655a4ce,待取,请独立审核01商机卡与范围边界，填写通过或要改及理由
+X0001,2026-08-23T12:14:26Z,pick,W,L,X0001_01_L独立审核任务单.md,ee8a12afce00948bf5d465931f7c36eb80fdc5edc98042153fbfa6bf2655a4ce,已领取,请独立审核01商机卡与范围边界，填写通过或要改及理由
+X0001,2026-08-23T12:14:27Z,ack,W,L,X0001_01_L独立审核任务单.md,ee8a12afce00948bf5d465931f7c36eb80fdc5edc98042153fbfa6bf2655a4ce,已取,请独立审核01商机卡与范围边界，填写通过或要改及理由
+X0004,2026-08-23T12:15:12Z,drop,W,L,X0004_01_L可追溯补充复核单.md,c4038fa2988ae324888573dc00988f8285c90d6226b3433f391c255559d17a06,待取,只补充确认可追溯性，不重复审核其他项目
