@@ -4,14 +4,14 @@
   "pending": [
     {
       "item_id": "X0004",
-      "at": "2026-08-23T12:15:12Z",
+      "at": "2026-08-23T12:49:56Z",
       "action": "drop",
       "sender": "W",
       "receiver": "L",
-      "filename": "X0004_01_L可追溯补充复核单.md",
-      "checksum": "c4038fa2988ae324888573dc00988f8285c90d6226b3433f391c255559d17a06",
+      "filename": "X0004_01_L材料更新后重审任务单.md",
+      "checksum": "186147e319469e7d194a99da492a101a2738f911ea36081f9fb3f354d5715bf3",
       "status": "待取",
-      "note": "只补充确认可追溯性，不重复审核其他项目"
+      "note": "请按更新后的R0001-R0004重新完成五项审核"
     }
   ],
   "current_docs": [],
