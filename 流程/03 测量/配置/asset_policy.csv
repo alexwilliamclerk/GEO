@@ -1,7 +1,0 @@
-﻿asset_name,deposit_from,when,keep,strip,forbidden
-query_bank,queries.csv,每次冻结词表,branded=0 的 text/need_id/style/kumar_cat/persona/locale 模式,客户品牌字面、treat,branded=1 整行
-market_panel,samples.csv,每次出数后,无品牌问的平台×需求切片：竞品出现、top 机构名、来源域名、search_triggered,客户事实字段、fingerprint、treat、截图,答案全文、电话地址
-source_graph,samples.source_raw,每次出数后,域名/账号频次 × 平台 × 城市 × 品类,自有源是否「客户的」,owned_sources 名单
-calib_history,calibration.csv,每次 calib,gap、引用面板条数、App 版本、通道,客户名,把 API 写成用户所见
-play_outcomes,人工,每次 retest,干预类型、等待天数、L1 四选一、平台覆盖,客户名、具体 URL、价格,把单次成功写成可规模化保证
-scoring_memory,aliases.csv,每轮结束,品类通用别名、exclude 同名规则模板,self 的客户全称与电话,把客户指纹当行业标准

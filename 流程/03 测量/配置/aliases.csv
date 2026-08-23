@@ -1,6 +1,0 @@
-entity_id,surface,type,note
-self,示例培训学校,self,请改成客户全称
-self,示例培训,self,简称
-excl_01,外地同名培训,exclude,同名异地，命中则 mention 不能算客户
-comp_01,竞品甲,competitor,请改成真实竞品
-comp_02,竞品乙,competitor,

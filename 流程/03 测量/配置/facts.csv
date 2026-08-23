@@ -1,7 +1,0 @@
-field,value,status,match_hint
-legal_name,示例培训学校有限公司,pending,营业执照全称，客户确认后改 confirmed
-address,示例市某某路1号,pending,
-phone,000-00000000,pending,
-license_org,示例市人力资源和社会保障局,pending,
-not_who,不是外地同名培训,pending,
-fingerprint,许可机关全称写进证据页后填这里,pending,复测时看答案有没有这段

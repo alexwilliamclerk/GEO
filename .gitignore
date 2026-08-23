@@ -1,23 +1,18 @@
-.DS_Store
-__pycache__/
-*.py[cod]
-.pytest_cache/
-测量/
-**/.keep
+# Local and sensitive files
 .env
 .env.*
-研究/业务流程文献/_secrets/
+!.env.example
+*.key
+*.pem
 
-# 研究全文与抽取正文只留本机，不入库、不推送
-研究/测量文献/pdfs/
-研究/测量文献/txt/
-研究/业务流程文献/**/全文/pdfs/
-研究/业务流程文献/**/全文/txt/
+# Operating-system and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
 
-# 开单实例，不是模板
-agent_pm/cases/*/
-!agent_pm/cases/.gitkeep
-流程/10 项目文件/案件/*/
-!流程/10 项目文件/案件/README.md
-**/.write.lock
-**/*.tmp
+# Temporary project files
+*.tmp
+*.bak
+*.lock
+~$*

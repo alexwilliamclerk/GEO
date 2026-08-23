@@ -1,1 +1,0 @@
-channel,metric,pre,post,did,did_lo,did_hi,excludes_zero,n_treat_clusters,n_hold_clusters,causal_claim,verdict

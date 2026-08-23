@@ -1,5 +1,0 @@
-stakeholder_id,project_id,role,name,interest,power,report_level,notes
-S01,,客户决策人,待填,高,高,只收四选一结论,不发 API 附表当主表
-S02,,客户对接,待填,高,中,周报+Issue,
-S03,,项目负责人,待填,高,高,全套,
-S04,,操作/评分,待填,中,低,清单与待裁定,

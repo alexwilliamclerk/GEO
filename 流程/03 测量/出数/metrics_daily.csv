@@ -1,1 +1,0 @@
-﻿date,platform,channel,query_set,city,product_mode,n_planned,n_valid,n_limited,n_unscored,p_mention,p_mention_lo,p_mention_hi,p_recommend,p_recommend_lo,p_recommend_hi,p_wrong,p_owned,p_fingerprint,p_sov,p_competitor,jaccard_brand_vs_prev,jaccard_source_sameday,jaccard_source_24h,p_mention_roll14,n_bootstrap,n_clusters,notes
