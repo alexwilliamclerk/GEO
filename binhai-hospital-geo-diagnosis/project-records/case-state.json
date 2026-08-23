@@ -1,9 +1,9 @@
 {
   "case_id": "泌尿诊断A",
-  "stage": "01",
-  "waiting": "agent",
-  "activity": "material_pending",
-  "current_member": "L",
+  "stage": "02",
+  "waiting": "human",
+  "activity": "requirements_input_pending",
+  "current_member": "W",
   "profiles": {
     "W": {
       "member": "W",
@@ -29,17 +29,31 @@
     }
   },
   "review": {
-    "current_id": "",
-    "current_result": "",
-    "current_stage": "",
-    "current_checksum": "",
+    "current_id": "R0008",
+    "current_result": "通过",
+    "current_stage": "01",
+    "current_checksum": "97723894B54EF4D8092B3C588FCC482A82A2FD90EDDD9D1595423A46D54C2D52",
     "current_record_checksum": "",
-    "seq": 0,
-    "attempts": {},
+    "seq": 1,
+    "attempts": {
+      "01": 2
+    },
     "failures": {}
   },
-  "fields": {},
-  "gates": {},
+  "fields": {
+    "vertical": "医疗服务 / 泌尿系结石诊疗",
+    "city": "泉州南安",
+    "product_line": "诊断",
+    "target": "泉州滨海医院泌尿科"
+  },
+  "gates": {
+    "G0": {
+      "status": "approved",
+      "by": "W",
+      "at": "2026-08-23T14:51:11Z",
+      "basis": "R0008审核通过；W收到回传后指示继续推进"
+    }
+  },
   "log": [
     {
       "at": "2026-08-21T11:12:18Z",
@@ -56,6 +70,25 @@
       "op": "profile",
       "member": "L",
       "mode": "novice"
+    },
+    {
+      "at": "2026-08-23T14:51:11Z",
+      "op": "review_receive",
+      "raw_id": "R0008",
+      "result": "通过"
+    },
+    {
+      "at": "2026-08-23T14:51:11Z",
+      "op": "gate",
+      "gate": "G0",
+      "status": "approved",
+      "member": "W"
+    },
+    {
+      "at": "2026-08-23T14:51:11Z",
+      "op": "stage_transition",
+      "from": "01",
+      "to": "02"
     }
   ]
 }

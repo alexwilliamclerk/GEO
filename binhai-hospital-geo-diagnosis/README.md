@@ -8,7 +8,7 @@
 
 审核与真实测评：L
 
-当前阶段：01 客户初次洽谈，G0 前
+当前阶段：02 需求冻结，G1 前
 
 当前地域：第一阶段仅覆盖泉州南安，不覆盖整个泉州
 
@@ -23,8 +23,8 @@
 | 目录 | 内容 |
 |---|---|
 | `source-materials/current/` | R0001—R0004：客户原话、转录、要点和 W 范围确认 |
-| `source-materials/review-history/` | R0005—R0007：L 先前回传的审核材料 |
-| `source-materials/registry.csv` | R0001—R0007 登记和校验和 |
+| `source-materials/review-history/` | R0005—R0008：审核成员回传与历史审核材料 |
+| `source-materials/registry.csv` | R0001—R0008 登记和校验和 |
 | `working-documents/` | 本项目生成的工作文档、Word 版和审核成员材料包 |
 | `project-records/` | 成员、状态、正式清单和 W/L 中转记录 |
 
@@ -39,8 +39,8 @@
 
 ## 当前下一步
 
-1. 将 `working-documents/01_审核成员地域口径更新重审材料包_2026-08-23.zip` 发给审核成员 L。
-2. L 按 `working-documents/01_审核成员地域口径更新重审任务单_2026-08-23.md` 完成五项审核。
-3. L 将审核结果回传 W。
-4. W 根据审核结果决定 G0：批准、驳回或要改。
-5. G0 批准前不开始手机 AI App 测评。
+1. 01 阶段已完成：R0008 审核通过，W 已批准 G0。
+2. W 按 `working-documents/02_需求冻结启动清单_G1前草稿_2026-08-23.md` 补充机构官方事实、平台选择与测评预算范围。
+3. Agent 据此起草项目章程、需求规格、验收标准和无品牌问题清单。
+4. L 对 02 整套材料进行 G1 独立审核。
+5. G1、G6、G7 完成前不开始手机 AI App 测评。

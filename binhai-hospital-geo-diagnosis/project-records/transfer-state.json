@@ -1,22 +1,10 @@
 {
   "case_id": "泌尿诊断A",
   "vault": "binhai-hospital-geo-diagnosis",
-  "pending": [
-    {
-      "item_id": "X0004",
-      "at": "2026-08-23T12:49:56Z",
-      "action": "drop",
-      "sender": "W",
-      "receiver": "L",
-      "filename": "X0004_01_审核成员地域口径更新重审任务单_2026-08-23.md",
-      "checksum": "9e52fb3a6a561ec9522cf09c2bc2575f331dd2375220295d7e4c0cbe7a6452ef",
-      "status": "待取",
-      "note": "请按更新后的R0001-R0004重新完成五项审核，并专项核对泉州南安地域口径"
-    }
-  ],
+  "pending": [],
   "current_docs": [],
   "locks": [],
-  "raw_count": 7,
+  "raw_count": 8,
   "public": {
     "raw": "source-materials/",
     "formal": "project-records/formal-manifest.csv",
