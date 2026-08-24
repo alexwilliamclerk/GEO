@@ -1,8 +1,8 @@
 {
   "case_id": "泌尿诊断A",
-  "stage": "08",
+  "stage": "03",
   "waiting": "human",
-  "activity": "g7_w_final_decision_ready",
+  "activity": "measurement_config_w_freeze_decision_ready",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -48,8 +48,8 @@
     "city": "泉州南安",
     "product_line": "诊断",
     "target": "泉州滨海医院泌尿外科（泌尿科）",
-    "institution_facts_source": "R0010",
-    "institution_facts_status": "provided_pending_official_verification",
+    "institution_facts_source": "R0024",
+    "institution_facts_status": "official_public_web_verified_with_exclusions_pending_w_freeze",
     "run_type": "process_evaluation",
     "platforms_required": ["app_doubao", "app_tongyi", "app_deepseek", "app_yuanbao"],
     "product_mode": "standard",
@@ -78,7 +78,9 @@
     "l_session_minutes": 3.0,
     "w_scoring_minutes": 1.0,
     "l_core_review_sample_count": 20,
-    "g7_status": "l_review_passed_pending_w_decision",
+    "g7_status": "frozen_g7_approved",
+    "measurement_config_status": "draft_pending_w_freeze_decision",
+    "mobile_testing_allowed": false,
     "communication_external_recipients_enabled": false
   },
   "gates": {
@@ -99,6 +101,12 @@
       "by": "W",
       "at": "2026-08-24T06:55:08Z",
       "basis": "R0019完整审核通过；R0020负责人正式批准"
+    },
+    "G7": {
+      "status": "approved",
+      "by": "W",
+      "at": "2026-08-24T08:02:36Z",
+      "basis": "R0022完整审核通过；R0023负责人正式批准"
     }
   },
   "log": [
@@ -363,6 +371,42 @@
       "result": "通过",
       "stage": "08",
       "note": "L使用最新任务单回传；16项检查全部勾选，必改项与待确认项均无，五项质量全部通过；等待W决定G7"
+    },
+    {
+      "at": "2026-08-24T08:02:36Z",
+      "op": "gate",
+      "gate": "G7",
+      "status": "approved",
+      "member": "W",
+      "raw_id": "R0023",
+      "basis": "R0022-R0023"
+    },
+    {
+      "at": "2026-08-24T08:02:36Z",
+      "op": "stage_transition",
+      "from": "08",
+      "to": "03"
+    },
+    {
+      "at": "2026-08-24T08:14:03Z",
+      "op": "source_register",
+      "raw_ids": ["R0023", "R0024"],
+      "stage": "03",
+      "note": "登记G7负责人批准和医院官方网页核验记录"
+    },
+    {
+      "at": "2026-08-24T08:14:03Z",
+      "op": "institution_fact_verification",
+      "raw_id": "R0024",
+      "status": "completed_with_exclusions_pending_w_freeze",
+      "note": "名称、泉州南安水头地址、泌尿外科、咨询热线、诊疗范围和医共体下辖关系已核验；完整分院别名、通用急诊电话和具体挂号步骤不纳入金标准"
+    },
+    {
+      "at": "2026-08-24T08:14:03Z",
+      "op": "measurement_config_draft_ready",
+      "stage": "03",
+      "current_member": "W",
+      "note": "facts、aliases、owned sources、queries和运行参数草稿已生成；等待W冻结，L仍不得开始手机实测"
     }
   ]
 }

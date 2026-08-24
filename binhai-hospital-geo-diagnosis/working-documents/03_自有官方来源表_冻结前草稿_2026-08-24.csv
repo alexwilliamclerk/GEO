@@ -1,0 +1,7 @@
+source_id,entity_id,source_type,name,url,status,allowed_use,note
+OS001,T001,official_website,泉州滨海医院官网,https://www.qzbhyy.com.cn/,proposed_verified,fact_and_source_match,版权主体与医院名称一致
+OS002,T001,official_website_page,医院介绍,https://www.qzbhyy.com.cn/html/web/yiyuangaikuang/yiyuanjieshao/index.html,proposed_verified,fact_match,名称机构性质与医共体自述
+OS003,T001,official_website_page,泌尿外科介绍,https://www.qzbhyy.com.cn/html/web/keshijieshao/miniaowaike/index.html,proposed_verified,fact_match,正式科室和诊疗范围
+OS004,T001,official_website_page,联系我们,https://www.qzbhyy.com.cn/html/web/jiuyizhinan/lianxiwomen1598598218177318913/index.html,proposed_verified,fact_match,地址咨询热线和来院路线
+OS005,T001,government,南安市卫生健康局县域医共体实施方案,https://www.nanan.gov.cn/zwgk/zfxxgkzl/bmzfxxgk/wshjhsyj/zfxxgkml/202410/t20241025_3097745.htm,proposed_verified,fact_match,证明医共体下辖关系；不是目标医院自有来源
+OS006,T001,government,泉州市卫生健康委员会急诊科专项公开表,https://health.quanzhou.gov.cn/xwzx/tzgg/202304/t20230424_2873228.htm,reference_only,conflict_check,只支持专项门诊记录；不得冻结为通用急诊电话
