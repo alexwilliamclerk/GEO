@@ -2,8 +2,8 @@
   "case_id": "泌尿诊断A",
   "stage": "08",
   "waiting": "human",
-  "activity": "g7_l_independent_review_package_ready",
-  "current_member": "L",
+  "activity": "g7_w_final_decision_ready",
+  "current_member": "W",
   "profiles": {
     "W": {
       "member": "W",
@@ -29,16 +29,17 @@
     }
   },
   "review": {
-    "current_id": "R0019",
+    "current_id": "R0022",
     "current_result": "通过",
-    "current_stage": "07",
-    "current_checksum": "1517313DFAADE2D60D2C47ACDAF7DF7CF04ACA088D65290D552B768B10618A5E",
+    "current_stage": "08",
+    "current_checksum": "D70C2A5458680F7C1AAD6707667CC48E8C2C8880B2A5FB6D317C1FF628591202",
     "current_record_checksum": "",
     "seq": 1,
     "attempts": {
       "01": 2,
       "02": 2,
-      "07": 2
+      "07": 2,
+      "08": 1
     },
     "failures": {}
   },
@@ -77,7 +78,7 @@
     "l_session_minutes": 3.0,
     "w_scoring_minutes": 1.0,
     "l_core_review_sample_count": 20,
-    "g7_status": "accepted_by_w_pending_l_review",
+    "g7_status": "l_review_passed_pending_w_decision",
     "communication_external_recipients_enabled": false
   },
   "gates": {
@@ -353,6 +354,15 @@
       "stage": "08",
       "current_member": "L",
       "note": "G7独立审核任务和完整材料包待交L；L当前不开始手机测评"
+    },
+    {
+      "at": "2026-08-24T07:55:16Z",
+      "op": "review_receive",
+      "raw_id": "R0022",
+      "transfer_id": "X0009",
+      "result": "通过",
+      "stage": "08",
+      "note": "L使用最新任务单回传；16项检查全部勾选，必改项与待确认项均无，五项质量全部通过；等待W决定G7"
     }
   ]
 }
