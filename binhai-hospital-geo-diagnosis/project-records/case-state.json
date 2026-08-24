@@ -1,9 +1,9 @@
 {
   "case_id": "泌尿诊断A",
   "stage": "02",
-  "waiting": "human",
-  "activity": "g1_drafts_ready_w_review",
-  "current_member": "W",
+  "waiting": "handoff",
+  "activity": "g1_review_package_ready_for_l",
+  "current_member": "L",
   "profiles": {
     "W": {
       "member": "W",
@@ -46,7 +46,16 @@
     "product_line": "诊断",
     "target": "泉州滨海医院泌尿外科（泌尿科）",
     "institution_facts_source": "R0010",
-    "institution_facts_status": "provided_pending_official_verification"
+    "institution_facts_status": "provided_pending_official_verification",
+    "run_type": "process_evaluation",
+    "platforms_required": ["app_doubao", "app_tongyi", "app_deepseek", "app_yuanbao"],
+    "product_mode": "standard",
+    "measurement_rounds": 5,
+    "round_interval_hours": 3,
+    "nh_query_count": 20,
+    "aux_query_count": 8,
+    "planned_app_sessions": 432,
+    "formal_diagnostic_claim_allowed": false
   },
   "gates": {
     "G0": {
@@ -109,6 +118,21 @@
       "package": "G1_pre_review",
       "current_member": "W",
       "note": "项目章程、需求规格、验收标准、问题清单和负责人审阅任务单已生成；尚未提交L"
+    },
+    {
+      "at": "2026-08-24T03:32:59Z",
+      "op": "owner_decision_register",
+      "raw_id": "R0011",
+      "stage": "02",
+      "note": "W确认平台、standard模式、N/H分组和竞品规则；本轮改为5轮且相邻间隔3小时的流程评估，不形成客户正式基线"
+    },
+    {
+      "at": "2026-08-24T03:32:59Z",
+      "op": "review_package_ready",
+      "transfer_id": "X0005",
+      "stage": "02",
+      "current_member": "L",
+      "note": "G1完整材料包待交L独立审核；L当前不开始手机测评"
     }
   ]
 }
