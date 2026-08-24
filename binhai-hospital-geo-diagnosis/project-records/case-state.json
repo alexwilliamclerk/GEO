@@ -2,8 +2,8 @@
   "case_id": "泌尿诊断A",
   "stage": "07",
   "waiting": "human",
-  "activity": "g6_lean_budget_draft_ready_w_review",
-  "current_member": "W",
+  "activity": "g6_l_independent_review_package_ready",
+  "current_member": "L",
   "profiles": {
     "W": {
       "member": "W",
@@ -66,7 +66,7 @@
     "competitor_freeze_required_before_round1": true,
     "competitor_review_checkbox_in_r0013": "unchecked",
     "competitor_review_checkbox_in_r0014": "checked",
-    "budget_status": "lean_draft_pending_w_review",
+    "budget_status": "accepted_by_w_pending_l_review",
     "budget_base_hours": 14.0,
     "budget_buffer_type": "fixed_hours",
     "budget_buffer_hours": 2.0,
@@ -238,6 +238,22 @@
       "current_member": "W",
       "supersedes": "07_工时与资源预算_G6前草稿_2026-08-24.md",
       "note": "保持132次会话和五轮范围不变；基础预算压缩为14小时，固定缓冲2小时，总上限16小时；L对20条Core事前分层复核，等待W审阅后再交L"
+    },
+    {
+      "at": "2026-08-24T05:34:05Z",
+      "op": "owner_budget_acceptance_register",
+      "raw_id": "R0017",
+      "stage": "07",
+      "current_member": "W",
+      "note": "W接受132次会话、基础14小时、固定缓冲2小时、总上限16小时以及20条Core事前分层复核；该确认不是G6最终批准"
+    },
+    {
+      "at": "2026-08-24T05:34:05Z",
+      "op": "review_package_ready",
+      "transfer_id": "X0007",
+      "stage": "07",
+      "current_member": "L",
+      "note": "精简预算G6独立审核任务和完整材料包待交L；L当前不开始手机测评"
     }
   ]
 }

@@ -1,10 +1,18 @@
 {
   "case_id": "泌尿诊断A",
   "vault": "binhai-hospital-geo-diagnosis",
-  "pending": [],
+  "pending": [
+    {
+      "item_id": "X0007",
+      "sender": "W",
+      "receiver": "L",
+      "status": "待取",
+      "filename": "X0007_07_审核成员G6独立审核任务单_2026-08-24.md"
+    }
+  ],
   "current_docs": [],
   "locks": [],
-  "raw_count": 15,
+  "raw_count": 17,
   "public": {
     "raw": "source-materials/",
     "formal": "project-records/formal-manifest.csv",
