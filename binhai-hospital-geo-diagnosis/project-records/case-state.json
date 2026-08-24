@@ -2,7 +2,7 @@
   "case_id": "泌尿诊断A",
   "stage": "07",
   "waiting": "human",
-  "activity": "g6_budget_draft_ready_w_review",
+  "activity": "g6_lean_budget_draft_ready_w_review",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -66,12 +66,16 @@
     "competitor_freeze_required_before_round1": true,
     "competitor_review_checkbox_in_r0013": "unchecked",
     "competitor_review_checkbox_in_r0014": "checked",
-    "budget_status": "draft_pending_w_review",
-    "budget_base_hours": 29.0,
-    "budget_buffer_percent": 15,
-    "budget_cap_hours": 34.0,
-    "budget_cap_hours_w": 15.0,
-    "budget_cap_hours_l": 19.0
+    "budget_status": "lean_draft_pending_w_review",
+    "budget_base_hours": 14.0,
+    "budget_buffer_type": "fixed_hours",
+    "budget_buffer_hours": 2.0,
+    "budget_cap_hours": 16.0,
+    "budget_cap_hours_w": 7.0,
+    "budget_cap_hours_l": 9.0,
+    "l_session_minutes": 3.0,
+    "w_scoring_minutes": 1.0,
+    "l_core_review_sample_count": 20
   },
   "gates": {
     "G0": {
@@ -225,6 +229,15 @@
       "stage": "07",
       "current_member": "W",
       "note": "132次会话；基础29小时；15%缓冲；建议总上限34小时，等待W审阅后再交L"
+    },
+    {
+      "at": "2026-08-24T05:12:53Z",
+      "op": "budget_revision_draft_ready",
+      "raw_id": "R0016",
+      "stage": "07",
+      "current_member": "W",
+      "supersedes": "07_工时与资源预算_G6前草稿_2026-08-24.md",
+      "note": "保持132次会话和五轮范围不变；基础预算压缩为14小时，固定缓冲2小时，总上限16小时；L对20条Core事前分层复核，等待W审阅后再交L"
     }
   ]
 }
