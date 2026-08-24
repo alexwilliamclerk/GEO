@@ -8,6 +8,9 @@
 
 ## 正式现行（改之前先 checkout）
 - `G0-001`：01 G0 负责人批准记录，现行。
+- `G1-001`：02 G1 负责人批准记录，现行。
+- `G1-CHARTER-001`、`G1-REQ-001`、`G1-ACCEPT-001`、`G1-QUERY-001`：G1 冻结文件。
+- `CF-001`、`CF-ALIASES-001`：竞品名单与别名冻结版，`competitor_freeze_id=CF-BHYY-GEO-DX-001-20260824-01`。
 
 ## 签出锁
 无锁。
@@ -16,4 +19,4 @@
 - 原始：`source-materials/`
 - 工作文档：`working-documents/`
 - 中转记录：`project-records/transfers/`
-- 原始条数：14
+- 原始条数：15

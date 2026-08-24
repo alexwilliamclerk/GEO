@@ -1,8 +1,8 @@
 {
   "case_id": "泌尿诊断A",
-  "stage": "02",
-  "waiting": "human",
-  "activity": "g1_review_passed_waiting_w_decision_and_competitor_freeze",
+  "stage": "07",
+  "waiting": "agent",
+  "activity": "g1_approved_competitor_frozen_budget_preparation",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -60,7 +60,8 @@
     "aux_query_count": 8,
     "planned_app_sessions": 132,
     "formal_diagnostic_claim_allowed": false,
-    "competitor_freeze_status": "draft_pending_w_approval",
+    "competitor_freeze_status": "frozen",
+    "competitor_freeze_id": "CF-BHYY-GEO-DX-001-20260824-01",
     "competitor_candidates": ["南安市医院", "南安市中医院"],
     "competitor_freeze_required_before_round1": true,
     "competitor_review_checkbox_in_r0013": "unchecked",
@@ -72,6 +73,12 @@
       "by": "W",
       "at": "2026-08-23T14:51:11Z",
       "basis": "R0008审核通过；W收到回传后指示继续推进"
+    },
+    "G1": {
+      "status": "approved",
+      "by": "W",
+      "at": "2026-08-24T04:40:55Z",
+      "basis": "R0014完整审核通过；R0015负责人正式批准"
     }
   },
   "log": [
@@ -183,6 +190,28 @@
       "result": "通过",
       "stage": "02",
       "note": "L修正回传；竞品事前冻结规则已勾选，全部检查项和五项质量均通过；等待W决定G1"
+    },
+    {
+      "at": "2026-08-24T04:40:55Z",
+      "op": "gate",
+      "gate": "G1",
+      "status": "approved",
+      "member": "W",
+      "basis": "R0014-R0015"
+    },
+    {
+      "at": "2026-08-24T04:40:55Z",
+      "op": "competitor_freeze",
+      "competitor_freeze_id": "CF-BHYY-GEO-DX-001-20260824-01",
+      "status": "frozen",
+      "entities": ["C001", "C002"],
+      "note": "南安市医院、南安市中医院及正式别名表已冻结；不得按采集结果事后修改"
+    },
+    {
+      "at": "2026-08-24T04:40:55Z",
+      "op": "stage_transition",
+      "from": "02",
+      "to": "07"
     }
   ]
 }
