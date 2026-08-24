@@ -52,9 +52,12 @@
     "product_mode": "standard",
     "measurement_rounds": 5,
     "round_interval_hours": 3,
-    "nh_query_count": 20,
+    "nh_query_count": 5,
+    "active_core_need_ids": ["N01", "N02", "N03", "N04"],
+    "active_monitor_need_ids": ["H02"],
+    "inactive_monitor_need_ids": ["H01", "H03", "H04", "H05", "H06"],
     "aux_query_count": 8,
-    "planned_app_sessions": 432,
+    "planned_app_sessions": 132,
     "formal_diagnostic_claim_allowed": false
   },
   "gates": {
@@ -133,6 +136,22 @@
       "stage": "02",
       "current_member": "L",
       "note": "G1完整材料包待交L独立审核；L当前不开始手机测评"
+    },
+    {
+      "at": "2026-08-24T04:11:05Z",
+      "op": "scope_change_register",
+      "raw_id": "R0012",
+      "stage": "02",
+      "note": "W将本轮N/H执行题从20条缩减为5条：N01-N04各1条、H02代表题1条；计划总量改为132次"
+    },
+    {
+      "at": "2026-08-24T04:11:05Z",
+      "op": "review_package_revised",
+      "transfer_id": "X0006",
+      "supersedes": "X0005",
+      "stage": "02",
+      "current_member": "L",
+      "note": "5题版G1材料包待交L；旧20题版作废"
     }
   ]
 }
