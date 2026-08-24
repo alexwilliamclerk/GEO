@@ -1,8 +1,8 @@
 {
   "case_id": "泌尿诊断A",
   "stage": "07",
-  "waiting": "agent",
-  "activity": "g1_approved_competitor_frozen_budget_preparation",
+  "waiting": "human",
+  "activity": "g6_budget_draft_ready_w_review",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -65,7 +65,13 @@
     "competitor_candidates": ["南安市医院", "南安市中医院"],
     "competitor_freeze_required_before_round1": true,
     "competitor_review_checkbox_in_r0013": "unchecked",
-    "competitor_review_checkbox_in_r0014": "checked"
+    "competitor_review_checkbox_in_r0014": "checked",
+    "budget_status": "draft_pending_w_review",
+    "budget_base_hours": 29.0,
+    "budget_buffer_percent": 15,
+    "budget_cap_hours": 34.0,
+    "budget_cap_hours_w": 15.0,
+    "budget_cap_hours_l": 19.0
   },
   "gates": {
     "G0": {
@@ -212,6 +218,13 @@
       "op": "stage_transition",
       "from": "02",
       "to": "07"
+    },
+    {
+      "at": "2026-08-24T05:06:10Z",
+      "op": "budget_draft_ready",
+      "stage": "07",
+      "current_member": "W",
+      "note": "132次会话；基础29小时；15%缓冲；建议总上限34小时，等待W审阅后再交L"
     }
   ]
 }
