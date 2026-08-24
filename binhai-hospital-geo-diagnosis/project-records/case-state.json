@@ -2,7 +2,7 @@
   "case_id": "泌尿诊断A",
   "stage": "02",
   "waiting": "human",
-  "activity": "requirements_input_pending",
+  "activity": "requirements_input_partial",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -44,7 +44,9 @@
     "vertical": "医疗服务 / 泌尿系结石诊疗",
     "city": "泉州南安",
     "product_line": "诊断",
-    "target": "泉州滨海医院泌尿科"
+    "target": "泉州滨海医院泌尿外科（泌尿科）",
+    "institution_facts_source": "R0010",
+    "institution_facts_status": "provided_pending_official_verification"
   },
   "gates": {
     "G0": {
@@ -89,6 +91,16 @@
       "op": "stage_transition",
       "from": "01",
       "to": "02"
+    },
+    {
+      "at": "2026-08-24T02:34:13Z",
+      "op": "source_register",
+      "raw_ids": [
+        "R0009",
+        "R0010"
+      ],
+      "stage": "02",
+      "note": "项目组提供医院机构信息，不是客户原话；待官方来源复核"
     }
   ]
 }
