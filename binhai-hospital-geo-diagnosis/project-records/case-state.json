@@ -1,8 +1,8 @@
 {
   "case_id": "泌尿诊断A",
-  "stage": "07",
+  "stage": "08",
   "waiting": "human",
-  "activity": "g6_w_final_decision_ready",
+  "activity": "g7_communication_drafts_ready_w_review",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -67,7 +67,7 @@
     "competitor_freeze_required_before_round1": true,
     "competitor_review_checkbox_in_r0013": "unchecked",
     "competitor_review_checkbox_in_r0014": "checked",
-    "budget_status": "l_review_passed_pending_w_g6_decision",
+    "budget_status": "frozen_g6_approved",
     "budget_base_hours": 14.0,
     "budget_buffer_type": "fixed_hours",
     "budget_buffer_hours": 2.0,
@@ -76,7 +76,9 @@
     "budget_cap_hours_l": 9.0,
     "l_session_minutes": 3.0,
     "w_scoring_minutes": 1.0,
-    "l_core_review_sample_count": 20
+    "l_core_review_sample_count": 20,
+    "g7_status": "draft_pending_w_review",
+    "communication_external_recipients_enabled": false
   },
   "gates": {
     "G0": {
@@ -90,6 +92,12 @@
       "by": "W",
       "at": "2026-08-24T04:40:55Z",
       "basis": "R0014完整审核通过；R0015负责人正式批准"
+    },
+    "G6": {
+      "status": "approved",
+      "by": "W",
+      "at": "2026-08-24T06:55:08Z",
+      "basis": "R0019完整审核通过；R0020负责人正式批准"
     }
   },
   "log": [
@@ -297,6 +305,38 @@
       "transfer_id": "X0008",
       "stage": "07",
       "note": "R0019已完整覆盖R0014检查及R0014至R0015衔接，补核任务取消；等待W决定G6"
+    },
+    {
+      "at": "2026-08-24T06:55:08Z",
+      "op": "gate",
+      "gate": "G6",
+      "status": "approved",
+      "member": "W",
+      "raw_id": "R0020",
+      "basis": "R0019-R0020"
+    },
+    {
+      "at": "2026-08-24T06:55:08Z",
+      "op": "budget_freeze",
+      "stage": "07",
+      "base_hours": 14.0,
+      "buffer_hours": 2.0,
+      "cap_hours": 16.0,
+      "note": "L上限9小时，W上限7小时；正式文件G6-BUDGET-001与G6-CALC-001"
+    },
+    {
+      "at": "2026-08-24T06:55:08Z",
+      "op": "stage_transition",
+      "from": "07",
+      "to": "08"
+    },
+    {
+      "at": "2026-08-24T06:55:08Z",
+      "op": "draft_package_ready",
+      "stage": "08",
+      "package": "G7_pre_review",
+      "current_member": "W",
+      "note": "干系人登记、沟通矩阵、对外口径与负责人审阅任务单已起草；尚未提交L"
     }
   ]
 }
