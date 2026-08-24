@@ -2,8 +2,8 @@
   "case_id": "泌尿诊断A",
   "stage": "08",
   "waiting": "human",
-  "activity": "g7_communication_drafts_ready_w_review",
-  "current_member": "W",
+  "activity": "g7_l_independent_review_package_ready",
+  "current_member": "L",
   "profiles": {
     "W": {
       "member": "W",
@@ -77,7 +77,7 @@
     "l_session_minutes": 3.0,
     "w_scoring_minutes": 1.0,
     "l_core_review_sample_count": 20,
-    "g7_status": "draft_pending_w_review",
+    "g7_status": "accepted_by_w_pending_l_review",
     "communication_external_recipients_enabled": false
   },
   "gates": {
@@ -337,6 +337,22 @@
       "package": "G7_pre_review",
       "current_member": "W",
       "note": "干系人登记、沟通矩阵、对外口径与负责人审阅任务单已起草；尚未提交L"
+    },
+    {
+      "at": "2026-08-24T07:03:01Z",
+      "op": "owner_communication_acceptance_register",
+      "raw_id": "R0021",
+      "stage": "08",
+      "current_member": "W",
+      "note": "W接受只启用W与L、未知客户角色不外发、沟通矩阵、采集间隔含义、结论边界和报告顺序；该确认不是G7最终批准"
+    },
+    {
+      "at": "2026-08-24T07:03:01Z",
+      "op": "review_package_ready",
+      "transfer_id": "X0009",
+      "stage": "08",
+      "current_member": "L",
+      "note": "G7独立审核任务和完整材料包待交L；L当前不开始手机测评"
     }
   ]
 }
