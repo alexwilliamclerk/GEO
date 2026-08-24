@@ -2,7 +2,7 @@
   "case_id": "泌尿诊断A",
   "stage": "07",
   "waiting": "human",
-  "activity": "g6_l_independent_review_package_ready",
+  "activity": "g6_r0014_supplemental_review_ready",
   "current_member": "L",
   "profiles": {
     "W": {
@@ -29,15 +29,16 @@
     }
   },
   "review": {
-    "current_id": "R0014",
-    "current_result": "通过",
-    "current_stage": "02",
-    "current_checksum": "B8DDE6D62967EC4F7BDC0CB91ABBBF28E4FCF639E64552274880796955848D9F",
+    "current_id": "R0018",
+    "current_result": "通过_待R0014补核",
+    "current_stage": "07",
+    "current_checksum": "3E1F1FC4C7211ABA116083052F59E5508B8FC33B8E52EEA33A77D85282D22B90",
     "current_record_checksum": "",
     "seq": 1,
     "attempts": {
       "01": 2,
-      "02": 2
+      "02": 2,
+      "07": 1
     },
     "failures": {}
   },
@@ -66,7 +67,7 @@
     "competitor_freeze_required_before_round1": true,
     "competitor_review_checkbox_in_r0013": "unchecked",
     "competitor_review_checkbox_in_r0014": "checked",
-    "budget_status": "accepted_by_w_pending_l_review",
+    "budget_status": "l_review_passed_pending_r0014_supplement",
     "budget_base_hours": 14.0,
     "budget_buffer_type": "fixed_hours",
     "budget_buffer_hours": 2.0,
@@ -262,6 +263,23 @@
       "stage": "07",
       "current_member": "L",
       "note": "G6审核任务清单和ZIP已补入R0014，用于衔接L的G1完整审核通过回传与W的R0015批准；此前缺少R0014的ZIP不再使用"
+    },
+    {
+      "at": "2026-08-24T06:26:55Z",
+      "op": "review_receive",
+      "raw_id": "R0018",
+      "transfer_id": "X0007",
+      "result": "通过_待R0014补核",
+      "stage": "07",
+      "note": "L对精简预算16项和五项质量均回传通过，但使用修订前任务单且未列R0014；原预算审核不重做"
+    },
+    {
+      "at": "2026-08-24T06:26:55Z",
+      "op": "supplemental_review_package_ready",
+      "transfer_id": "X0008",
+      "stage": "07",
+      "current_member": "L",
+      "note": "仅补核R0014与R0015衔接并确认R0018通过结论是否保持不变；当前仍不开始手机测评"
     }
   ]
 }
