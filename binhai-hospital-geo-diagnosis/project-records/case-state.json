@@ -254,6 +254,14 @@
       "stage": "07",
       "current_member": "L",
       "note": "精简预算G6独立审核任务和完整材料包待交L；L当前不开始手机测评"
+    },
+    {
+      "at": "2026-08-24T06:20:49Z",
+      "op": "review_package_revised",
+      "transfer_id": "X0007",
+      "stage": "07",
+      "current_member": "L",
+      "note": "G6审核任务清单和ZIP已补入R0014，用于衔接L的G1完整审核通过回传与W的R0015批准；此前缺少R0014的ZIP不再使用"
     }
   ]
 }
