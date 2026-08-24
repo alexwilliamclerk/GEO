@@ -1,0 +1,2 @@
+exception_id,sample_id,reported_at,platform,query_id,round,exception_type,observed_behavior,evidence_filename,operator_action,w_decision,status
+EXAMPLE,APP-DB-Q01-R1,2026-08-24T09:05:00+08:00,app_doubao,Q01,1,network_error,示例行请删除后填写,example.png,仅记录未改题,,example

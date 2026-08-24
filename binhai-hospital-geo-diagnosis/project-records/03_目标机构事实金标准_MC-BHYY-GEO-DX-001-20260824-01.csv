@@ -1,0 +1,15 @@
+fact_id,entity_id,field,value,source_raw_id,source_url,status,score_use,note
+F001,T001,canonical_name,泉州滨海医院,R0024,https://www.qzbhyy.com.cn/html/web/yiyuangaikuang/yiyuanjieshao/index.html,frozen_verified,yes,仅作本轮测试标签和网页核对对象；不构成法定名称认证
+F002,T001,institution_type,综合医院,R0024,https://wjw.fujian.gov.cn/xxgk/gsgg/tzgg/202510/t20251017_7022774.htm,frozen_verified,yes,官方公开表列示机构类型
+F003,T001,city,泉州南安,R0024,https://www.qzbhyy.com.cn/html/web/jiuyizhinan/lianxiwomen1598598218177318913/index.html,frozen_verified,yes,本轮项目切片
+F004,T001,address,福建省泉州市南安市水头镇滨海新城海联大道,R0024,https://www.qzbhyy.com.cn/html/web/jiuyizhinan/lianxiwomen1598598218177318913/index.html,frozen_verified,yes,官网页脚完整地址
+F005,T001,department_official,泌尿外科,R0024,https://www.qzbhyy.com.cn/html/web/keshijieshao/miniaowaike/index.html,frozen_verified,yes,官网独立科室名称
+F006,T001,consultation_phone,0595-26699199,R0024,https://www.qzbhyy.com.cn/html/web/jiuyizhinan/lianxiwomen1598598218177318913/index.html,frozen_verified,yes,医院咨询热线而非科室专线
+F007,T001,service_scope,泌尿系结石,R0024,https://www.qzbhyy.com.cn/html/web/keshijieshao/miniaowaike/index.html,frozen_verified,yes,包括膀胱结石输尿管结石肾结石
+F008,T001,service_scope,泌尿系肿瘤,R0024,https://www.qzbhyy.com.cn/html/web/keshijieshao/miniaowaike/index.html,frozen_verified,yes,官网列示范围
+F009,T001,service_scope,尿路梗阻,R0024,https://www.qzbhyy.com.cn/html/web/keshijieshao/miniaowaike/index.html,frozen_verified,yes,官网列示范围
+F010,T001,medical_consortium_relation,南安市县域医共体下辖机构,R0024,https://www.nanan.gov.cn/zwgk/zfxxgkzl/bmzfxxgk/wshjhsyj/zfxxgkml/202410/t20241025_3097745.htm,frozen_verified,yes,不得扩写为未经直接核验的完整机构别名
+F011,T001,emergency_phone,,R0024,https://health.quanzhou.gov.cn/xwzx/tzgg/202304/t20230424_2873228.htm,frozen_excluded,no,来源冲突且不足以证明通用急诊电话
+F012,T001,online_registration_path,,R0024,https://www.qzbhyy.com.cn/html/web/jiuyizhinan/menzhenjiyuyuefuwu/index.html,frozen_excluded,no,官网正文不足以确认具体步骤
+F013,T001,offline_registration_path,,R0024,https://www.qzbhyy.com.cn/html/web/jiuyizhinan/menzhenjiyuyuefuwu/index.html,frozen_excluded,no,官网正文不足以确认具体步骤
+F014,T001,department_location,,R0024,https://www.qzbhyy.com.cn/html/web/jiuyizhinan/index.html,frozen_excluded,no,泌尿外科门诊具体楼层或位置未核验

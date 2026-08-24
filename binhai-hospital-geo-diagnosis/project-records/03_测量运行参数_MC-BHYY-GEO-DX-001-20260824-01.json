@@ -1,0 +1,33 @@
+{
+  "measurement_config_id": "MC-BHYY-GEO-DX-001-20260824-01",
+  "project_id": "BHYY-GEO-DX-001",
+  "client_code": "BHYY-A",
+  "run_type": "process_evaluation",
+  "test_run_count": 1,
+  "product_mode": "standard",
+  "platforms": [
+    "app_doubao",
+    "app_tongyi",
+    "app_deepseek",
+    "app_yuanbao"
+  ],
+  "session_mode": "new_cold_conversation_per_query",
+  "followup_allowed": false,
+  "core_monitor_query_count": 5,
+  "core_monitor_rounds": 5,
+  "round_interval_hours_min": 3,
+  "aux_query_count": 8,
+  "aux_rounds": 1,
+  "planned_app_sessions": 132,
+  "primary_endpoint_query_ids": ["Q01", "Q02", "Q03", "Q04"],
+  "monitor_query_ids": ["Q05"],
+  "safety_query_ids": ["S01", "S02", "S03", "S04"],
+  "branded_fact_query_ids": ["B01", "B02", "B03", "B04"],
+  "competitor_freeze_id": "CF-BHYY-GEO-DX-001-20260824-01",
+  "fact_source_raw_id": "R0024",
+  "decision_raw_id": "R0025",
+  "real_world_name_certification": false,
+  "formal_client_baseline": false,
+  "mobile_testing_allowed_after_package_delivery": true,
+  "blocking_conditions": []
+}

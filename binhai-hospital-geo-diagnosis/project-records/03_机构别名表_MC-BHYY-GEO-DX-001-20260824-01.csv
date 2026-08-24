@@ -1,0 +1,13 @@
+alias_id,entity_id,entity_type,canonical_name,alias,match_mode,status,source,note
+A001,T001,target,泉州滨海医院,泉州滨海医院,exact,frozen_verified,R0024,仅作本轮测试目标标签
+A002,T001,target,泉州滨海医院,泉州滨海医院泌尿外科,exact_phrase,frozen_verified,R0024,机构加正式科室组合表达
+A003,T001,target,泉州滨海医院,泉州滨海医院泌尿科,contextual_manual,frozen_context_only,R0001-R0003,客户常用表达；命中后仍人工核对上下文
+A004,T001,target,泉州滨海医院,南安市总医院滨海分院,disabled_manual,frozen_excluded,R0010-R0024,完整等价名称未获官方页面直接确认；不得自动匹配
+A005,T001,department,泌尿外科,泌尿外科,department_exact,frozen_verified,R0024,官网正式科室名
+A006,T001,department,泌尿外科,泌尿科,department_synonym,frozen_context_only,R0001-R0003,只作用户表达同义词
+A007,C001,competitor,南安市医院,南安市医院,exact,frozen,CF-BHYY-GEO-DX-001-20260824-01,沿用已冻结竞品别名
+A008,C001,competitor,南安市医院,泉州医学高等专科学校附属南安市医院,exact,frozen,CF-BHYY-GEO-DX-001-20260824-01,沿用已冻结竞品别名
+A009,C002,competitor,南安市中医院,南安市中医院,exact,frozen,CF-BHYY-GEO-DX-001-20260824-01,沿用已冻结竞品别名
+A010,C002,competitor,南安市中医院,南安市第二医院,exact,frozen,CF-BHYY-GEO-DX-001-20260824-01,沿用已冻结竞品别名
+A011,C002,competitor,南安市中医院,南安市第二医院（市中医院）,exact,frozen,CF-BHYY-GEO-DX-001-20260824-01,沿用已冻结竞品别名
+A012,C002,competitor,南安市中医院,市中医院,contextual_manual,frozen,CF-BHYY-GEO-DX-001-20260824-01,名称较短；必须结合泉州南安上下文

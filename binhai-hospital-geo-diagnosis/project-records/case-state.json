@@ -2,8 +2,8 @@
   "case_id": "泌尿诊断A",
   "stage": "03",
   "waiting": "human",
-  "activity": "measurement_config_w_freeze_decision_ready",
-  "current_member": "W",
+  "activity": "mobile_app_process_evaluation_ready_waiting_l_start",
+  "current_member": "L",
   "profiles": {
     "W": {
       "member": "W",
@@ -49,7 +49,7 @@
     "product_line": "诊断",
     "target": "泉州滨海医院泌尿外科（泌尿科）",
     "institution_facts_source": "R0024",
-    "institution_facts_status": "official_public_web_verified_with_exclusions_pending_w_freeze",
+    "institution_facts_status": "frozen_with_explicit_exclusions",
     "run_type": "process_evaluation",
     "platforms_required": ["app_doubao", "app_tongyi", "app_deepseek", "app_yuanbao"],
     "product_mode": "standard",
@@ -79,8 +79,12 @@
     "w_scoring_minutes": 1.0,
     "l_core_review_sample_count": 20,
     "g7_status": "frozen_g7_approved",
-    "measurement_config_status": "draft_pending_w_freeze_decision",
-    "mobile_testing_allowed": false,
+    "measurement_config_status": "frozen",
+    "measurement_config_id": "MC-BHYY-GEO-DX-001-20260824-01",
+    "test_run_count": 1,
+    "real_world_name_certification": false,
+    "formal_client_baseline": false,
+    "mobile_testing_allowed": true,
     "communication_external_recipients_enabled": false
   },
   "gates": {
@@ -407,6 +411,43 @@
       "stage": "03",
       "current_member": "W",
       "note": "facts、aliases、owned sources、queries和运行参数草稿已生成；等待W冻结，L仍不得开始手机实测"
+    },
+    {
+      "at": "2026-08-24T08:20:47Z",
+      "op": "source_register",
+      "raw_ids": ["R0025"],
+      "stage": "03",
+      "note": "登记W对医院事实和03测量配置的冻结批准，以及一次流程测试不代表现实医院名称认证的补充边界"
+    },
+    {
+      "at": "2026-08-24T08:20:47Z",
+      "op": "institution_fact_freeze",
+      "measurement_config_id": "MC-BHYY-GEO-DX-001-20260824-01",
+      "status": "frozen_with_explicit_exclusions",
+      "note": "完整分院别名、通用急诊电话、具体挂号步骤和科室具体位置保持未核验且不评分"
+    },
+    {
+      "at": "2026-08-24T08:20:47Z",
+      "op": "measurement_config_freeze",
+      "measurement_config_id": "MC-BHYY-GEO-DX-001-20260824-01",
+      "status": "frozen",
+      "planned_app_sessions": 132,
+      "note": "一次流程评估运行；内部五个正式采集轮次；不形成现实医院名称认证或正式客户基线"
+    },
+    {
+      "at": "2026-08-24T08:20:47Z",
+      "op": "review_sample_freeze",
+      "sample_count": 20,
+      "note": "按平台乘轮次各取1条并保证N01至N04各5条"
+    },
+    {
+      "at": "2026-08-24T08:26:05Z",
+      "op": "operator_package_ready",
+      "transfer_id": "X0010",
+      "current_member": "L",
+      "package": "03_审核成员手机实测材料包_2026-08-24.zip",
+      "package_checksum": "4AFD98D53ECB53416F2032F26287FE05BCA7BE2E16D0DD1018441567227073D2",
+      "note": "L收到冻结材料包后可开始；不得使用旧草稿"
     }
   ]
 }

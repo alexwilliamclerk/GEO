@@ -1,18 +1,14 @@
 {
   "case_id": "泌尿诊断A",
   "vault": "binhai-hospital-geo-diagnosis",
-  "pending": [],
+  "pending": ["X0010"],
   "current_docs": [
-    "working-documents/03_测量配置与事实冻结负责人确认单_2026-08-24.md",
-    "working-documents/03_医院官方事实复核结果_2026-08-24.md",
-    "working-documents/03_目标机构事实表_冻结前草稿_2026-08-24.csv",
-    "working-documents/03_机构别名表_冻结前草稿_2026-08-24.csv",
-    "working-documents/03_自有官方来源表_冻结前草稿_2026-08-24.csv",
-    "working-documents/03_测量问题配置_冻结前草稿_2026-08-24.csv",
-    "working-documents/03_测量运行参数_冻结前草稿_2026-08-24.json"
+    "project-records/transfers/X0010_03_审核成员手机实测任务单_2026-08-24.md",
+    "working-documents/03_审核成员手机实测材料包_2026-08-24.zip",
+    "working-documents/03_审核成员手机实测记录表_2026-08-24.csv"
   ],
   "locks": [],
-  "raw_count": 24,
+  "raw_count": 25,
   "public": {
     "raw": "source-materials/",
     "formal": "project-records/formal-manifest.csv",
