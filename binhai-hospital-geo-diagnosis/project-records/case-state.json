@@ -1,9 +1,9 @@
 {
   "case_id": "泌尿诊断A",
   "stage": "02",
-  "waiting": "handoff",
-  "activity": "g1_review_package_ready_for_l",
-  "current_member": "L",
+  "waiting": "human",
+  "activity": "g1_review_passed_waiting_w_decision_and_competitor_freeze",
+  "current_member": "W",
   "profiles": {
     "W": {
       "member": "W",
@@ -29,14 +29,15 @@
     }
   },
   "review": {
-    "current_id": "R0008",
+    "current_id": "R0014",
     "current_result": "通过",
-    "current_stage": "01",
-    "current_checksum": "97723894B54EF4D8092B3C588FCC482A82A2FD90EDDD9D1595423A46D54C2D52",
+    "current_stage": "02",
+    "current_checksum": "B8DDE6D62967EC4F7BDC0CB91ABBBF28E4FCF639E64552274880796955848D9F",
     "current_record_checksum": "",
     "seq": 1,
     "attempts": {
-      "01": 2
+      "01": 2,
+      "02": 2
     },
     "failures": {}
   },
@@ -58,7 +59,12 @@
     "inactive_monitor_need_ids": ["H01", "H03", "H04", "H05", "H06"],
     "aux_query_count": 8,
     "planned_app_sessions": 132,
-    "formal_diagnostic_claim_allowed": false
+    "formal_diagnostic_claim_allowed": false,
+    "competitor_freeze_status": "draft_pending_w_approval",
+    "competitor_candidates": ["南安市医院", "南安市中医院"],
+    "competitor_freeze_required_before_round1": true,
+    "competitor_review_checkbox_in_r0013": "unchecked",
+    "competitor_review_checkbox_in_r0014": "checked"
   },
   "gates": {
     "G0": {
@@ -152,6 +158,31 @@
       "stage": "02",
       "current_member": "L",
       "note": "5题版G1材料包待交L；旧20题版作废"
+    },
+    {
+      "at": "2026-08-24T04:29:43Z",
+      "op": "review_receive",
+      "raw_id": "R0013",
+      "result": "通过",
+      "stage": "02",
+      "note": "L对5题版G1材料回传通过，五项质量均通过；竞品冻结检查框未勾选，因此该项继续作为第1轮前硬阻断"
+    },
+    {
+      "at": "2026-08-24T04:29:43Z",
+      "op": "competitor_freeze_draft",
+      "stage": "03",
+      "status": "draft_pending_w_approval",
+      "candidates": ["南安市医院", "南安市中医院"],
+      "note": "已依据公开机构资料起草名单和别名表；W书面批准前L不得开始第1轮"
+    },
+    {
+      "at": "2026-08-24T04:32:11Z",
+      "op": "review_receive",
+      "raw_id": "R0014",
+      "supersedes": "R0013",
+      "result": "通过",
+      "stage": "02",
+      "note": "L修正回传；竞品事前冻结规则已勾选，全部检查项和五项质量均通过；等待W决定G1"
     }
   ]
 }
