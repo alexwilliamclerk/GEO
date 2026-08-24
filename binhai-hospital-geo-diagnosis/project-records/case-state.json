@@ -2,7 +2,7 @@
   "case_id": "泌尿诊断A",
   "stage": "02",
   "waiting": "human",
-  "activity": "requirements_input_partial",
+  "activity": "g1_drafts_ready_w_review",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -101,6 +101,14 @@
       ],
       "stage": "02",
       "note": "项目组提供医院机构信息，不是客户原话；待官方来源复核"
+    },
+    {
+      "at": "2026-08-24T03:14:47Z",
+      "op": "draft_package_ready",
+      "stage": "02",
+      "package": "G1_pre_review",
+      "current_member": "W",
+      "note": "项目章程、需求规格、验收标准、问题清单和负责人审阅任务单已生成；尚未提交L"
     }
   ]
 }
