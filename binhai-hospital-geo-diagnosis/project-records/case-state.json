@@ -1,8 +1,8 @@
 {
   "case_id": "泌尿诊断A",
-  "stage": "03",
+  "stage": "04",
   "waiting": "human",
-  "activity": "formal_core_review_passed_g3_owner_decision_ready",
+  "activity": "stage04_plan_draft_ready_waiting_w_review",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -29,10 +29,10 @@
     }
   },
   "review": {
-    "current_id": "R0022",
+    "current_id": "R0032",
     "current_result": "通过",
-    "current_stage": "08",
-    "current_checksum": "D70C2A5458680F7C1AAD6707667CC48E8C2C8880B2A5FB6D317C1FF628591202",
+    "current_stage": "03",
+    "current_checksum": "237A6CA49C251D6A3A9B09EAD5B1624CFB415EB53B96DB242EBB3383254206BD",
     "current_record_checksum": "",
     "seq": 1,
     "attempts": {
@@ -117,7 +117,19 @@
     "adjudicated_score_correction_count": 0,
     "unregistered_similar_name_count": 1,
     "unregistered_similar_names": ["南安中医院"],
-    "communication_external_recipients_enabled": false
+    "communication_external_recipients_enabled": false,
+    "g3_status": "approved",
+    "g3_result": "流程可执行",
+    "g3_approval_raw_id": "R0033",
+    "g3_formal_review_raw_id": "R0032",
+    "g3_formal_client_baseline": false,
+    "g3_real_world_name_certification": false,
+    "stage04_plan_status": "draft_waiting_w_review",
+    "stage04_plan_base_hours": 14.0,
+    "stage04_plan_buffer_hours": 2.0,
+    "stage04_plan_cap_hours": 16.0,
+    "stage04_plan_hours_w": 6.0,
+    "stage04_plan_hours_l": 8.0
   },
   "gates": {
     "G0": {
@@ -143,6 +155,12 @@
       "by": "W",
       "at": "2026-08-24T08:02:36Z",
       "basis": "R0022完整审核通过；R0023负责人正式批准"
+    },
+    "G3": {
+      "status": "approved",
+      "by": "W",
+      "at": "2026-08-26T09:18:07Z",
+      "basis": "R0032正式复核通过；R0033负责人正式批准；结论为流程可执行"
     }
   },
   "log": [
@@ -580,6 +598,44 @@
       "transfer_id": "X0011",
       "result": "通过",
       "note": "L正式确认20/20已复核，20条一致，不一致0条，无必须返工评分；G3负责人决定材料已生成"
+    },
+    {
+      "at": "2026-08-26T09:18:07Z",
+      "op": "source_register",
+      "raw_ids": ["R0033"],
+      "stage": "03",
+      "note": "登记负责人G3正式批准原话"
+    },
+    {
+      "at": "2026-08-26T09:18:07Z",
+      "op": "gate",
+      "gate": "G3",
+      "status": "approved",
+      "member": "W",
+      "basis": "R0032-R0033"
+    },
+    {
+      "at": "2026-08-26T09:18:07Z",
+      "op": "result_freeze",
+      "stage": "03",
+      "primary_rows": 80,
+      "target_mentions": 6,
+      "target_first_choice": 0,
+      "note": "132条评分、G3结果摘要和评分台账冻结；结论仅为流程可执行，不形成客户正式基线"
+    },
+    {
+      "at": "2026-08-26T09:18:07Z",
+      "op": "stage_transition",
+      "from": "03",
+      "to": "04"
+    },
+    {
+      "at": "2026-08-26T09:18:07Z",
+      "op": "draft_package_ready",
+      "stage": "04",
+      "package": "G2_pre_review",
+      "current_member": "W",
+      "note": "WBS、进度、RACI和负责人G2前审阅任务单已起草；尚未提交L，不重复安排132次手机实测"
     }
   ]
 }
