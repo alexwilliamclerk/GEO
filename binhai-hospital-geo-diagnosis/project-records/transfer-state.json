@@ -3,13 +3,13 @@
   "vault": "binhai-hospital-geo-diagnosis",
   "pending": [],
   "current_docs": [
+    "source-materials/review-history/R0032_审核成员Core样本正式复核通过回传_2026-08-26.md",
     "working-documents/03_手机实测逐条评分与初步结果_2026-08-26.md",
-    "working-documents/03_Core复核分歧与负责人裁定记录_2026-08-26.md",
-    "measurement-runs/MC-BHYY-GEO-DX-001-20260824-01/samples-scored.csv",
-    "measurement-runs/MC-BHYY-GEO-DX-001-20260824-01/w-scoring-summary.json"
+    "working-documents/03_G3负责人批准任务单_2026-08-26.md",
+    "measurement-runs/MC-BHYY-GEO-DX-001-20260824-01/samples-scored.csv"
   ],
   "locks": [],
-  "raw_count": 31,
+  "raw_count": 32,
   "public": {
     "raw": "source-materials/",
     "formal": "project-records/formal-manifest.csv",

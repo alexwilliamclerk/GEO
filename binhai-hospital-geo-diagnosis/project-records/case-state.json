@@ -2,7 +2,7 @@
   "case_id": "泌尿诊断A",
   "stage": "03",
   "waiting": "human",
-  "activity": "core_review_adjudication_complete_g3_decision_ready",
+  "activity": "formal_core_review_passed_g3_owner_decision_ready",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -108,10 +108,12 @@
     "primary_p_mention": 0.075,
     "primary_target_first_choice_count": 0,
     "primary_target_secondary_or_alternative_count": 6,
-    "l_core_review_status": "completed_x0011_two_objections_adjudicated",
+    "l_core_review_status": "formal_pass_r0032_all_20_consistent",
     "l_core_review_sample_count": 20,
-    "l_core_review_no_objection_count": 18,
-    "l_core_review_objection_count": 2,
+    "l_core_review_no_objection_count": 20,
+    "l_core_review_objection_count": 0,
+    "informal_review_feedback_raw_id": "R0031",
+    "formal_review_result_raw_id": "R0032",
     "adjudicated_score_correction_count": 0,
     "unregistered_similar_name_count": 1,
     "unregistered_similar_names": ["南安中医院"],
@@ -562,6 +564,22 @@
       "transfer_id": "X0011",
       "status": "completed_no_score_change",
       "note": "RV002原图无冻结C002名称；RV019为未冻结写法南安中医院，按冻结规则不自动匹配C002并登记unregistered_other；132条评分可进入G3决定"
+    },
+    {
+      "at": "2026-08-26T08:54:40Z",
+      "op": "source_register",
+      "raw_ids": ["R0032"],
+      "stage": "03",
+      "note": "登记L正式签署的X0011 Core复核通过回传"
+    },
+    {
+      "at": "2026-08-26T08:54:40Z",
+      "op": "formal_review_receive",
+      "raw_id": "R0032",
+      "supersedes_informal_feedback": "R0031",
+      "transfer_id": "X0011",
+      "result": "通过",
+      "note": "L正式确认20/20已复核，20条一致，不一致0条，无必须返工评分；G3负责人决定材料已生成"
     }
   ]
 }
