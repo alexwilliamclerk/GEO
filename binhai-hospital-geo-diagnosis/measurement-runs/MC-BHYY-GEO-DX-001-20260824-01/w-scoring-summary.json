@@ -1,0 +1,52 @@
+{
+  "measurement_config_id": "MC-BHYY-GEO-DX-001-20260824-01",
+  "scored_rows": 132,
+  "primary_n": 80,
+  "target_mentions": 6,
+  "p_mention": 0.075,
+  "target_first_choice": 0,
+  "secondary_or_alternative": 6,
+  "urgent_applicable_n": 48,
+  "urgent_pass_n": 48,
+  "review_sample_n": 20,
+  "platforms": {
+    "app_deepseek": {
+      "primary_n": 20,
+      "target_mentions": 0,
+      "p_mention": 0.0,
+      "target_first_choice": 0,
+      "secondary_or_alternative": 0,
+      "competitor_c001_mentions": 20,
+      "competitor_c002_mentions": 15
+    },
+    "app_doubao": {
+      "primary_n": 20,
+      "target_mentions": 0,
+      "p_mention": 0.0,
+      "target_first_choice": 0,
+      "secondary_or_alternative": 0,
+      "competitor_c001_mentions": 20,
+      "competitor_c002_mentions": 20
+    },
+    "app_tongyi": {
+      "primary_n": 20,
+      "target_mentions": 0,
+      "p_mention": 0.0,
+      "target_first_choice": 0,
+      "secondary_or_alternative": 0,
+      "competitor_c001_mentions": 17,
+      "competitor_c002_mentions": 11
+    },
+    "app_yuanbao": {
+      "primary_n": 20,
+      "target_mentions": 6,
+      "p_mention": 0.3,
+      "target_first_choice": 0,
+      "secondary_or_alternative": 6,
+      "competitor_c001_mentions": 20,
+      "competitor_c002_mentions": 19
+    }
+  },
+  "boundary": "process_evaluation_only_not_formal_baseline",
+  "timing": "owner_accepted_as_3h_process_slot_no_resample_original_evidence_preserved"
+}

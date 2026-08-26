@@ -2,7 +2,7 @@
   "case_id": "泌尿诊断A",
   "stage": "03",
   "waiting": "human",
-  "activity": "mobile_app_process_evaluation_ready_waiting_l_start",
+  "activity": "w_scoring_complete_waiting_l_core_review",
   "current_member": "L",
   "profiles": {
     "W": {
@@ -84,7 +84,32 @@
     "test_run_count": 1,
     "real_world_name_certification": false,
     "formal_client_baseline": false,
-    "mobile_testing_allowed": true,
+    "mobile_testing_allowed": false,
+    "mobile_evidence_status": "received_132_structure_complete_qc_issues_recorded",
+    "mobile_evidence_count": 132,
+    "mobile_evidence_platform_counts": {
+      "app_doubao": 33,
+      "app_deepseek": 33,
+      "app_tongyi": 33,
+      "app_yuanbao": 33
+    },
+    "query_label_correction_count": 4,
+    "timing_compliance_status": "owner_accepted_as_3h_process_slot_no_resample",
+    "timing_evidence_status": "not_fully_verified_original_indications_preserved",
+    "first_pass_primary_target_mention_candidates": {
+      "app_doubao": 0,
+      "app_deepseek": 0,
+      "app_tongyi": 0,
+      "app_yuanbao": 6
+    },
+    "w_scoring_status": "complete_132_pending_l_core_review",
+    "primary_scored_count": 80,
+    "primary_target_mention_count": 6,
+    "primary_p_mention": 0.075,
+    "primary_target_first_choice_count": 0,
+    "primary_target_secondary_or_alternative_count": 6,
+    "l_core_review_status": "pending_x0011",
+    "l_core_review_sample_count": 20,
     "communication_external_recipients_enabled": false
   },
   "gates": {
@@ -448,6 +473,74 @@
       "package": "03_审核成员手机实测材料包_2026-08-24.zip",
       "package_checksum": "4AFD98D53ECB53416F2032F26287FE05BCA7BE2E16D0DD1018441567227073D2",
       "note": "L收到冻结材料包后可开始；不得使用旧草稿"
+    },
+    {
+      "at": "2026-08-26T07:23:58Z",
+      "op": "source_register",
+      "raw_ids": ["R0026", "R0027", "R0028", "R0029"],
+      "stage": "03",
+      "note": "登记L回传的豆包、DeepSeek、通义千问和腾讯元宝手机实测原始包；四个平台各33张，共132张"
+    },
+    {
+      "at": "2026-08-26T07:23:58Z",
+      "op": "transfer_receive",
+      "transfer_id": "X0010",
+      "status": "completed_received",
+      "note": "X0010已完成回传和收件；结构完整性通过"
+    },
+    {
+      "at": "2026-08-26T07:23:58Z",
+      "op": "evidence_structure_qc",
+      "measurement_config_id": "MC-BHYY-GEO-DX-001-20260824-01",
+      "evidence_count": 132,
+      "status": "complete_with_recorded_issues",
+      "note": "无缺失、无重复、图片可读；元宝R1四个文件名题号错位，按画面问题提出元数据纠正，原图不改"
+    },
+    {
+      "at": "2026-08-26T07:23:58Z",
+      "op": "timing_qc",
+      "status": "not_verified_with_below_3h_indications",
+      "note": "压缩包时间不是手机采集时间证明；DeepSeek、通义千问、腾讯元宝R1至R2辅助间隔低于3小时，豆包时间材料不一致；等待W决定接受偏差、补证或局部补采"
+    },
+    {
+      "at": "2026-08-26T07:23:58Z",
+      "op": "first_pass_mention_locator",
+      "status": "ocr_candidates_pending_visual_confirmation",
+      "note": "无品牌Q01至Q04共80次；目标机构提及候选为豆包0、DeepSeek0、通义千问0、腾讯元宝6；提及不得直接记为推荐"
+    },
+    {
+      "at": "2026-08-26T07:23:58Z",
+      "op": "source_register",
+      "raw_ids": ["R0030"],
+      "stage": "03",
+      "note": "登记负责人对本轮时间口径和不补采的确认"
+    },
+    {
+      "at": "2026-08-26T07:23:58Z",
+      "op": "owner_timing_decision",
+      "raw_id": "R0030",
+      "status": "accepted_as_3h_process_slot_no_resample",
+      "note": "本次只是一轮流程测试；不足3小时按一个3小时时段口径接受，不改写原始时间线索，不外推至正式基线；继续转录、评分和Core人工复核"
+    },
+    {
+      "at": "2026-08-26T07:23:58Z",
+      "op": "w_scoring_complete",
+      "measurement_config_id": "MC-BHYY-GEO-DX-001-20260824-01",
+      "scored_rows": 132,
+      "primary_rows": 80,
+      "target_mentions": 6,
+      "target_first_choice": 0,
+      "note": "目标提及均来自腾讯元宝且均为次级或备选；其他三平台为0；等待L复核20条冻结Core样本"
+    },
+    {
+      "at": "2026-08-26T07:23:58Z",
+      "op": "review_package_ready",
+      "transfer_id": "X0011",
+      "stage": "03",
+      "current_member": "L",
+      "package": "03_审核成员Core样本复核材料包_2026-08-26.zip",
+      "package_checksum": "4A4CC7837232E31798B90E8C46CA38128B1B8EAE318071B4D6890597F42C14E8",
+      "note": "包含事前冻结的20张Core原始截图、独立复核表、任务单和元宝题号纠正参考；不是重新采集"
     }
   ]
 }

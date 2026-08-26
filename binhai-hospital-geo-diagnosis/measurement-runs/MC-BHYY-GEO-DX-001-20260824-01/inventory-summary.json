@@ -1,0 +1,19 @@
+{
+  "measurement_config_id": "MC-BHYY-GEO-DX-001-20260824-01",
+  "evidence_count": 132,
+  "platform_counts": {
+    "app_doubao": 33,
+    "app_deepseek": 33,
+    "app_tongyi": 33,
+    "app_yuanbao": 33
+  },
+  "label_correction_count": 4,
+  "manual_prompt_check_count": 0,
+  "answer_present_estimate_count": 132,
+  "target_mention_candidate_count": 22,
+  "notes": [
+    "OCR text is derived evidence and never replaces the raw screenshot.",
+    "Archive entry timestamps are not sufficient proof of capture time.",
+    "Mention candidates require visual confirmation before final scoring."
+  ]
+}

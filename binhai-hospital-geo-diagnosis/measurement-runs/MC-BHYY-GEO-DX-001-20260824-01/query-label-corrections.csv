@@ -1,0 +1,5 @@
+﻿platform,round,raw_filename,declared_query_id,resolved_query_id,basis,status
+app_yuanbao,1,BHYY-GEO-DX-001_yuanbao_Q01_R1_20260824.jpg,Q01,Q05,visible prompt OCR; raw image preserved unchanged,proposed_metadata_correction
+app_yuanbao,1,BHYY-GEO-DX-001_yuanbao_Q02_R1_20260824.jpg,Q02,Q04,visible prompt OCR; raw image preserved unchanged,proposed_metadata_correction
+app_yuanbao,1,BHYY-GEO-DX-001_yuanbao_Q04_R1_20260824.jpg,Q04,Q02,visible prompt OCR; raw image preserved unchanged,proposed_metadata_correction
+app_yuanbao,1,BHYY-GEO-DX-001_yuanbao_Q05_R1_20260824.jpg,Q05,Q01,visible prompt OCR; raw image preserved unchanged,proposed_metadata_correction

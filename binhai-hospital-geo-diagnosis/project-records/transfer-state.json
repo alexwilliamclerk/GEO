@@ -1,14 +1,15 @@
 {
   "case_id": "泌尿诊断A",
   "vault": "binhai-hospital-geo-diagnosis",
-  "pending": ["X0010"],
+  "pending": ["X0011"],
   "current_docs": [
-    "project-records/transfers/X0010_03_审核成员手机实测任务单_2026-08-24.md",
-    "working-documents/03_审核成员手机实测材料包_2026-08-24.zip",
-    "working-documents/03_审核成员手机实测记录表_2026-08-24.csv"
+    "working-documents/03_手机实测逐条评分与初步结果_2026-08-26.md",
+    "project-records/transfers/X0011_03_审核成员Core样本复核任务单_2026-08-26.md",
+    "working-documents/03_审核成员Core样本复核记录表_2026-08-26.csv",
+    "working-documents/03_审核成员Core样本复核材料包_2026-08-26.zip"
   ],
   "locks": [],
-  "raw_count": 25,
+  "raw_count": 30,
   "public": {
     "raw": "source-materials/",
     "formal": "project-records/formal-manifest.csv",

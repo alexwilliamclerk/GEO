@@ -1,0 +1,21 @@
+﻿platform,round,archive_start_time,archive_end_time,delta_from_previous_start_hours,metadata_interval_result,filename_date_consistent,evidence_quality
+app_deepseek,1,2026-08-24 22:48:28,2026-08-24 22:49:12,,first_round,1,archive_entry_timestamp_only_not_capture_proof
+app_deepseek,2,2026-08-25 01:30:48,2026-08-25 01:34:00,2.71,metadata_below_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_deepseek,3,2026-08-25 11:13:46,2026-08-25 11:16:02,9.72,metadata_at_least_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_deepseek,4,2026-08-25 14:26:10,2026-08-25 14:28:10,3.21,metadata_at_least_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_deepseek,5,2026-08-25 17:43:22,2026-08-25 17:48:06,3.29,metadata_at_least_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_doubao,1,2026-08-25 20:21:58,2026-08-25 20:24:28,,first_round,0,archive_entry_timestamp_only_not_capture_proof
+app_doubao,2,2026-08-25 23:38:58,2026-08-26 01:32:36,3.28,metadata_at_least_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_doubao,3,2026-08-26 01:27:30,2026-08-26 01:29:40,1.81,metadata_below_3h,0,archive_entry_timestamp_only_not_capture_proof
+app_doubao,4,2026-08-26 10:45:40,2026-08-26 10:47:40,9.30,metadata_at_least_3h,0,archive_entry_timestamp_only_not_capture_proof
+app_doubao,5,2026-08-26 13:10:24,2026-08-26 13:14:00,2.41,metadata_below_3h,0,archive_entry_timestamp_only_not_capture_proof
+app_tongyi,1,2026-08-24 22:45:38,2026-08-24 22:47:46,,first_round,1,archive_entry_timestamp_only_not_capture_proof
+app_tongyi,2,2026-08-25 01:35:08,2026-08-25 01:39:18,2.83,metadata_below_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_tongyi,3,2026-08-25 11:17:02,2026-08-25 11:20:14,9.70,metadata_at_least_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_tongyi,4,2026-08-25 14:34:48,2026-08-25 14:38:38,3.30,metadata_at_least_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_tongyi,5,2026-08-25 17:51:04,2026-08-25 17:53:42,3.27,metadata_at_least_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_yuanbao,1,2026-08-24 22:49:40,2026-08-24 22:50:46,,first_round,1,archive_entry_timestamp_only_not_capture_proof
+app_yuanbao,2,2026-08-25 01:40:12,2026-08-25 01:42:44,2.84,metadata_below_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_yuanbao,3,2026-08-25 11:21:18,2026-08-25 11:24:00,9.69,metadata_at_least_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_yuanbao,4,2026-08-25 14:44:24,2026-08-25 14:46:50,3.38,metadata_at_least_3h,1,archive_entry_timestamp_only_not_capture_proof
+app_yuanbao,5,2026-08-25 17:57:28,2026-08-25 17:59:26,3.22,metadata_at_least_3h,1,archive_entry_timestamp_only_not_capture_proof
