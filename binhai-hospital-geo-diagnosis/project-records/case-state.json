@@ -2,8 +2,8 @@
   "case_id": "泌尿诊断A",
   "stage": "04",
   "waiting": "human",
-  "activity": "stage04_plan_draft_ready_waiting_w_review",
-  "current_member": "W",
+  "activity": "g2_review_package_ready_waiting_l_review",
+  "current_member": "L",
   "profiles": {
     "W": {
       "member": "W",
@@ -39,7 +39,8 @@
       "01": 2,
       "02": 2,
       "07": 2,
-      "08": 1
+      "08": 1,
+      "04": 1
     },
     "failures": {}
   },
@@ -124,7 +125,10 @@
     "g3_formal_review_raw_id": "R0032",
     "g3_formal_client_baseline": false,
     "g3_real_world_name_certification": false,
-    "stage04_plan_status": "draft_waiting_w_review",
+    "stage04_plan_status": "owner_preapproved_waiting_l_review",
+    "stage04_owner_acceptance_raw_id": "R0034",
+    "stage04_g2_review_transfer_id": "X0012",
+    "stage04_g2_review_package_checksum": "AE38A5D417B8CB1F765CF4BD9B9DF60C843FBE3F0A5688AD9B3E37ABC2584D29",
     "stage04_plan_base_hours": 14.0,
     "stage04_plan_buffer_hours": 2.0,
     "stage04_plan_cap_hours": 16.0,
@@ -636,6 +640,31 @@
       "package": "G2_pre_review",
       "current_member": "W",
       "note": "WBS、进度、RACI和负责人G2前审阅任务单已起草；尚未提交L，不重复安排132次手机实测"
+    },
+    {
+      "at": "2026-08-26T13:56:27Z",
+      "op": "source_register",
+      "raw_ids": ["R0034"],
+      "stage": "04",
+      "note": "登记负责人对04项目计划草稿的送审前接受确认；不是G2最终批准"
+    },
+    {
+      "at": "2026-08-26T13:56:27Z",
+      "op": "owner_plan_acceptance_register",
+      "raw_id": "R0034",
+      "stage": "04",
+      "status": "accepted_for_independent_review",
+      "note": "确认不重复132次实测、基础14小时、缓冲2小时、总上限16小时、W 6小时、L 8小时及诊断边界"
+    },
+    {
+      "at": "2026-08-26T13:56:27Z",
+      "op": "review_package_ready",
+      "transfer_id": "X0012",
+      "stage": "04",
+      "current_member": "L",
+      "package": "04_审核成员G2独立审核材料包_2026-08-26.zip",
+      "package_checksum": "AE38A5D417B8CB1F765CF4BD9B9DF60C843FBE3F0A5688AD9B3E37ABC2584D29",
+      "note": "14份材料；L只审核计划、预算、职责和边界，不重新采集或重新评分；回传后由W决定G2"
     }
   ]
 }
