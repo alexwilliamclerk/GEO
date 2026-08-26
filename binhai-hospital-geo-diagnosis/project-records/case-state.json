@@ -2,8 +2,8 @@
   "case_id": "泌尿诊断A",
   "stage": "03",
   "waiting": "human",
-  "activity": "w_scoring_complete_waiting_l_core_review",
-  "current_member": "L",
+  "activity": "core_review_adjudication_complete_g3_decision_ready",
+  "current_member": "W",
   "profiles": {
     "W": {
       "member": "W",
@@ -102,14 +102,19 @@
       "app_tongyi": 0,
       "app_yuanbao": 6
     },
-    "w_scoring_status": "complete_132_pending_l_core_review",
+    "w_scoring_status": "complete_132_l_review_adjudicated",
     "primary_scored_count": 80,
     "primary_target_mention_count": 6,
     "primary_p_mention": 0.075,
     "primary_target_first_choice_count": 0,
     "primary_target_secondary_or_alternative_count": 6,
-    "l_core_review_status": "pending_x0011",
+    "l_core_review_status": "completed_x0011_two_objections_adjudicated",
     "l_core_review_sample_count": 20,
+    "l_core_review_no_objection_count": 18,
+    "l_core_review_objection_count": 2,
+    "adjudicated_score_correction_count": 0,
+    "unregistered_similar_name_count": 1,
+    "unregistered_similar_names": ["南安中医院"],
     "communication_external_recipients_enabled": false
   },
   "gates": {
@@ -541,6 +546,22 @@
       "package": "03_审核成员Core样本复核材料包_2026-08-26.zip",
       "package_checksum": "4A4CC7837232E31798B90E8C46CA38128B1B8EAE318071B4D6890597F42C14E8",
       "note": "包含事前冻结的20张Core原始截图、独立复核表、任务单和元宝题号纠正参考；不是重新采集"
+    },
+    {
+      "at": "2026-08-26T08:05:00Z",
+      "op": "review_receive",
+      "raw_id": "R0031",
+      "transfer_id": "X0011",
+      "stage": "03",
+      "result": "18_no_objection_2_c002_objections",
+      "note": "L提出RV002和RV019漏标C002；由W回看原图裁定"
+    },
+    {
+      "at": "2026-08-26T08:05:00Z",
+      "op": "scoring_adjudication",
+      "transfer_id": "X0011",
+      "status": "completed_no_score_change",
+      "note": "RV002原图无冻结C002名称；RV019为未冻结写法南安中医院，按冻结规则不自动匹配C002并登记unregistered_other；132条评分可进入G3决定"
     }
   ]
 }

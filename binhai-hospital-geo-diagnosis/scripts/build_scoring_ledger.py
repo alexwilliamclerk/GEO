@@ -27,6 +27,10 @@ TARGET_ALTERNATIVE_FILES = {
     "BHYY-GEO-DX-001_yuanbao_Q05_R1_20260824.jpg",
 }
 
+UNREGISTERED_OTHER_OVERRIDE = {
+    "APP-DS-Q03-R5": "南安中医院（未冻结相似名称，不自动计入C002）",
+}
+
 FACT_OVERRIDE = {
     ("app_doubao", "B01"): (
         "pass_core_with_unverified_extras",
@@ -198,11 +202,14 @@ def main() -> None:
             medical_advice_note = "出现过度概括的院前止痛药禁用表述；不得作为项目医疗建议复用。"
 
         review_sample_id = review_key.get((platform, round_number, query_id), "")
+        sample_id = f"APP-{PLATFORM_CODE[platform]}-{query_id}-R{round_number}"
+        unregistered_other = UNREGISTERED_OTHER_OVERRIDE.get(sample_id, "")
         scoring_status = "w_scored_ocr_assisted_raw_traceable"
         if query_id.startswith(("S", "B")) or target_mention or item["query_label_status"] != "matched":
             scoring_status = "w_scored_exception_text_reviewed_raw_traceable"
+        if unregistered_other:
+            scoring_status = "w_adjudicated_review_disagreement_no_score_change"
 
-        sample_id = f"APP-{PLATFORM_CODE[platform]}-{query_id}-R{round_number}"
         rows.append(
             {
                 "sample_id": sample_id,
@@ -226,12 +233,17 @@ def main() -> None:
                 "target_fact_result": fact_result,
                 "target_fact_risk": target_fact_risk,
                 "medical_advice_risk": medical_advice_risk,
+                "unregistered_other": unregistered_other,
                 "review_sample_id": review_sample_id,
                 "scoring_status": scoring_status,
                 "raw_filename": raw_filename,
                 "evidence_path": item["evidence_path"],
                 "transcription_path": item["ocr_path"],
-                "scoring_note": fact_note or medical_advice_note,
+                "scoring_note": (
+                    "复核原图为‘南安中医院’，不在冻结C002别名表；保持c002=0并登记为未冻结相似名称。"
+                    if unregistered_other
+                    else fact_note or medical_advice_note
+                ),
             }
         )
 
