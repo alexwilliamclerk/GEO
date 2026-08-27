@@ -2,8 +2,8 @@
   "case_id": "泌尿诊断A",
   "stage": "05",
   "waiting": "human",
-  "activity": "g5_review_package_ready_waiting_l_review",
-  "current_member": "L",
+  "activity": "g5_review_passed_waiting_owner_decision",
+  "current_member": "W",
   "profiles": {
     "W": {
       "member": "W",
@@ -29,10 +29,10 @@
     }
   },
   "review": {
-    "current_id": "R0035",
+    "current_id": "R0038",
     "current_result": "通过",
-    "current_stage": "04",
-    "current_checksum": "FA5C2D83BFB3A43629023F38AAC93D1561C66AF62D10EAD28600C56897F874CA",
+    "current_stage": "05",
+    "current_checksum": "0A63810C8607B5A3AE5CD90B91246D59A74FEB1FC9ACF0E259BF9AC446473319",
     "current_record_checksum": "",
     "seq": 1,
     "attempts": {
@@ -141,9 +141,11 @@
     "g2_approval_raw_id": "R0036",
     "g2_review_raw_id": "R0035",
     "intervention_class": "无",
-    "stage05_control_status": "owner_preapproved_waiting_l_review",
+    "stage05_control_status": "independent_review_passed_waiting_w_g5_decision",
     "stage05_owner_acceptance_raw_id": "R0037",
     "stage05_g5_review_transfer_id": "X0013",
+    "stage05_g5_review_raw_id": "R0038",
+    "stage05_g5_review_result": "通过",
     "stage05_g5_review_package_checksum": "4C6FE5C032C2649334493B5AFAEE1F7BBDDFF7C85B8D8A6189A94912A3C1D8B7",
     "stage05_new_mobile_testing_planned": false,
     "stage05_effect_retest_planned": false
@@ -782,6 +784,37 @@
       "package": "05_审核成员G5独立审核材料包_2026-08-27.zip",
       "package_checksum": "4C6FE5C032C2649334493B5AFAEE1F7BBDDFF7C85B8D8A6189A94912A3C1D8B7",
       "note": "15份材料；L只审核无干预控制周报数字风险披露和结论边界，不重新采集或评分；回传后由W决定G5"
+    },
+    {
+      "at": "2026-08-27T15:48:34Z",
+      "op": "source_register",
+      "raw_ids": ["R0038"],
+      "stage": "05",
+      "note": "登记审核成员签署的G5完整审核通过回传"
+    },
+    {
+      "at": "2026-08-27T15:48:34Z",
+      "op": "review_receive",
+      "raw_id": "R0038",
+      "transfer_id": "X0013",
+      "stage": "05",
+      "result": "通过",
+      "note": "15项全部勾选，五项质量全部通过，必改项和待负责人确认项均无，允许W决定G5"
+    },
+    {
+      "at": "2026-08-27T15:48:34Z",
+      "op": "transfer_receive",
+      "transfer_id": "X0013",
+      "status": "completed_received",
+      "note": "G5独立审核已完成；当前等待W最终批准或驳回G5"
+    },
+    {
+      "at": "2026-08-27T15:48:34Z",
+      "op": "owner_gate_task_ready",
+      "gate": "G5",
+      "stage": "05",
+      "current_member": "W",
+      "note": "负责人G5批准任务单已生成；未自动批准"
     }
   ]
 }
