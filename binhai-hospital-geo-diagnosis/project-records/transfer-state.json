@@ -3,14 +3,17 @@
   "vault": "binhai-hospital-geo-diagnosis",
   "pending": [],
   "current_docs": [
-    "source-materials/review-history/R0035_审核成员G2完整审核通过回传_2026-08-27.md",
-    "working-documents/04_工作分解结构_G2送审版_2026-08-26.md",
-    "working-documents/04_进度计划_G2送审版_2026-08-26.csv",
-    "working-documents/04_职责分工矩阵_G2送审版_2026-08-26.csv",
-    "working-documents/04_负责人G2批准任务单_2026-08-27.md"
+    "project-records/04_G2负责人批准记录_2026-08-27.md",
+    "project-records/04_工作分解结构_G2冻结版_2026-08-27.md",
+    "project-records/04_进度计划_G2冻结版_2026-08-27.csv",
+    "project-records/04_职责分工矩阵_G2冻结版_2026-08-27.csv",
+    "working-documents/05_推进实施控制方案_G5前草稿_2026-08-27.md",
+    "working-documents/05_问题与变更日志_G5前草稿_2026-08-27.csv",
+    "working-documents/05_流程评估周报_G5前草稿_2026-08-27.md",
+    "working-documents/05_负责人G5前审阅任务单_2026-08-27.md"
   ],
   "locks": [],
-  "raw_count": 35,
+  "raw_count": 36,
   "public": {
     "raw": "source-materials/",
     "formal": "project-records/formal-manifest.csv",

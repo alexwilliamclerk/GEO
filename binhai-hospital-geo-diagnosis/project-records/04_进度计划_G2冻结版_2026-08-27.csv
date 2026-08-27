@@ -1,0 +1,11 @@
+schedule_id,wbs_id,window,task,owner,reviewer_or_support,plan_hours,status,dependency,evidence_or_output,boundary
+SCH-001,04.1,day0,医院事实与测量配置准备,W,Agent;L,1.5,已完成,G1;G6;G7,R0024-R0025及MC冻结文件,一次流程评估
+SCH-002,04.2,day0,设备账号App版本standard模式和命名规则预检,L,W;Agent,0.4,已完成,MC冻结,X0010操作包及回传证据,不计自然等待
+SCH-003,04.3,day0,S-B辅助题32次冷会话与证据入库,L,W;Agent,1.6,已完成,SCH-002,R0026-R0029,不进入p_mention
+SCH-004,04.4,noise,Q01-Q05五轮100次冷会话与证据入库,L,W;Agent,5.0,已完成,SCH-002,R0026-R0029,不足3小时仅按R0030本轮口径接受
+SCH-005,04.5,baseline,132条收件覆盖与可追溯性核对,W,Agent,0.4,已完成,SCH-003;SCH-004,03原始证据收件与结构质检记录,窗口名不代表正式客户基线
+SCH-006,04.6,baseline,132条逐条评分与异常裁定,W,Agent,2.2,已完成,SCH-005,samples-scored.csv及裁定记录,L不参与首评
+SCH-007,04.7,baseline,20条Core第二人独立复核,L,W;Agent,0.5,已完成,SCH-006,R0032及X0011,不事后改样本或别名
+SCH-008,04.8,closeout,阶段独立审核与异常回传,L,W,0.5,已完成,SCH-007,R0032,正式结论优先于非正式反馈
+SCH-009,04.9,closeout,数据汇总事实风险整理和流程评估报告,W,L;Agent,1.4,进行中,G3,诊断报告草稿,不承诺推荐排名咨询或到诊增长
+SCH-010,04.10,closeout,阶段管理验收移交与归档,W,L;Agent,0.5,进行中,SCH-009,G2及后续Gate和归档,不改页不发文不干预不复测
