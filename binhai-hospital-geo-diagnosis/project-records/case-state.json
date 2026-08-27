@@ -2,8 +2,8 @@
   "case_id": "泌尿诊断A",
   "stage": "06",
   "waiting": "human",
-  "activity": "stage06_delivery_draft_ready_waiting_w_review",
-  "current_member": "W",
+  "activity": "stage06_g4_review_package_ready_waiting_l",
+  "current_member": "L",
   "profiles": {
     "W": {
       "member": "W",
@@ -152,8 +152,11 @@
     "g5_status": "approved",
     "g5_approval_raw_id": "R0039",
     "g5_review_raw_id": "R0038",
-    "stage06_delivery_status": "draft_waiting_w_review",
-    "stage06_g4_status": "not_started",
+    "stage06_delivery_status": "draft_accepted_by_w_waiting_g4_review",
+    "stage06_owner_acceptance_raw_id": "R0040",
+    "stage06_g4_status": "waiting_l_review",
+    "stage06_g4_review_transfer_id": "X0014",
+    "stage06_g4_review_package_checksum": "661735E9D513B5EB195922C11F011DA8BA9584D93722D1B434A3A2B6FB16F3C7",
     "stage06_customer_role_enabled": false
   },
   "gates": {
@@ -863,6 +866,32 @@
       "package": "G4_pre_review",
       "current_member": "W",
       "note": "流程评估诊断报告指标覆盖证据清单交付物清单验收单和负责人G4前审阅任务单已起草；尚未提交L"
+    },
+    {
+      "at": "2026-08-27T16:06:36Z",
+      "op": "source_register",
+      "raw_ids": ["R0040"],
+      "stage": "06",
+      "note": "登记负责人接受06交付与验收草稿并允许生成G4独立复核材料包的原话"
+    },
+    {
+      "at": "2026-08-27T16:06:36Z",
+      "op": "owner_pre_review_accept",
+      "gate": "G4",
+      "stage": "06",
+      "member": "W",
+      "basis": "R0040",
+      "note": "这不是G4最终批准"
+    },
+    {
+      "at": "2026-08-27T16:06:36Z",
+      "op": "review_package_ready",
+      "transfer_id": "X0014",
+      "stage": "06",
+      "current_member": "L",
+      "package": "06_审核成员G4独立复核材料包_2026-08-28.zip",
+      "package_checksum": "661735E9D513B5EB195922C11F011DA8BA9584D93722D1B434A3A2B6FB16F3C7",
+      "note": "17份材料；L只复核交付数字证据限制和验收状态，不重新手机采集或评分；回传后由W决定G4"
     }
   ]
 }
