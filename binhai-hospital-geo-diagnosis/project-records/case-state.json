@@ -1,8 +1,8 @@
 {
   "case_id": "泌尿诊断A",
-  "stage": "05",
+  "stage": "06",
   "waiting": "human",
-  "activity": "g5_review_passed_waiting_owner_decision",
+  "activity": "stage06_delivery_draft_ready_waiting_w_review",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -141,14 +141,20 @@
     "g2_approval_raw_id": "R0036",
     "g2_review_raw_id": "R0035",
     "intervention_class": "无",
-    "stage05_control_status": "independent_review_passed_waiting_w_g5_decision",
+    "stage05_control_status": "frozen_g5_approved",
     "stage05_owner_acceptance_raw_id": "R0037",
     "stage05_g5_review_transfer_id": "X0013",
     "stage05_g5_review_raw_id": "R0038",
     "stage05_g5_review_result": "通过",
     "stage05_g5_review_package_checksum": "4C6FE5C032C2649334493B5AFAEE1F7BBDDFF7C85B8D8A6189A94912A3C1D8B7",
     "stage05_new_mobile_testing_planned": false,
-    "stage05_effect_retest_planned": false
+    "stage05_effect_retest_planned": false,
+    "g5_status": "approved",
+    "g5_approval_raw_id": "R0039",
+    "g5_review_raw_id": "R0038",
+    "stage06_delivery_status": "draft_waiting_w_review",
+    "stage06_g4_status": "not_started",
+    "stage06_customer_role_enabled": false
   },
   "gates": {
     "G0": {
@@ -186,6 +192,12 @@
       "by": "W",
       "at": "2026-08-27T13:38:37Z",
       "basis": "R0035完整审核通过；R0036负责人正式批准；04计划冻结"
+    },
+    "G5": {
+      "status": "approved",
+      "by": "W",
+      "at": "2026-08-27T15:55:31Z",
+      "basis": "R0038完整审核通过；R0039负责人正式批准；05无干预控制冻结"
     }
   },
   "log": [
@@ -815,6 +827,42 @@
       "stage": "05",
       "current_member": "W",
       "note": "负责人G5批准任务单已生成；未自动批准"
+    },
+    {
+      "at": "2026-08-27T15:55:31Z",
+      "op": "source_register",
+      "raw_ids": ["R0039"],
+      "stage": "05",
+      "note": "登记负责人G5正式批准原话"
+    },
+    {
+      "at": "2026-08-27T15:55:31Z",
+      "op": "gate",
+      "gate": "G5",
+      "status": "approved",
+      "member": "W",
+      "basis": "R0038-R0039"
+    },
+    {
+      "at": "2026-08-27T15:55:31Z",
+      "op": "control_freeze",
+      "stage": "05",
+      "intervention_class": "无",
+      "note": "控制方案问题日志和流程评估周报按G5冻结；手机实测评分复核均不重复"
+    },
+    {
+      "at": "2026-08-27T15:55:31Z",
+      "op": "stage_transition",
+      "from": "05",
+      "to": "06"
+    },
+    {
+      "at": "2026-08-27T15:55:31Z",
+      "op": "draft_package_ready",
+      "stage": "06",
+      "package": "G4_pre_review",
+      "current_member": "W",
+      "note": "流程评估诊断报告指标覆盖证据清单交付物清单验收单和负责人G4前审阅任务单已起草；尚未提交L"
     }
   ]
 }

@@ -1,0 +1,6 @@
+platform,total_app_sessions,core_rows,target_mentions,p_mention,secondary_or_alternative,first_choice,urgent_applicable,urgent_pass,competitor_c001_mentions,competitor_c002_mentions
+豆包,33,20,0,0.000,0,0,12,12,20,20
+DeepSeek,33,20,0,0.000,0,0,12,12,20,15
+通义千问,33,20,0,0.000,0,0,12,12,17,11
+腾讯元宝,33,20,6,0.300,6,0,12,12,20,19
+本轮合计,132,80,6,0.075,6,0,48,48,77,65
