@@ -1,0 +1,56 @@
+{
+  "project_id": "BHYY-GEO-DX-001",
+  "run_type": "process_evaluation",
+  "delivery_status": "g4_frozen_internal_acceptance",
+  "g4_approval_raw_id": "R0042",
+  "measurement_config_id": "MC-BHYY-GEO-DX-001-20260824-01",
+  "evidence_count": 132,
+  "platforms": [
+    {
+      "platform": "豆包",
+      "raw_id": "R0026",
+      "count": 33,
+      "path": "source-materials/current/R0026_审核成员豆包手机实测原始包_2026-08-26.zip"
+    },
+    {
+      "platform": "DeepSeek",
+      "raw_id": "R0027",
+      "count": 33,
+      "path": "source-materials/current/R0027_审核成员DeepSeek手机实测原始包_2026-08-26.zip"
+    },
+    {
+      "platform": "通义千问",
+      "raw_id": "R0028",
+      "count": 33,
+      "path": "source-materials/current/R0028_审核成员通义千问手机实测原始包_2026-08-26.zip"
+    },
+    {
+      "platform": "腾讯元宝",
+      "raw_id": "R0029",
+      "count": 33,
+      "path": "source-materials/current/R0029_审核成员腾讯元宝手机实测原始包_2026-08-26.zip"
+    }
+  ],
+  "measurement_files": {
+    "inventory": "measurement-runs/MC-BHYY-GEO-DX-001-20260824-01/evidence-inventory.csv",
+    "query_label_corrections": "measurement-runs/MC-BHYY-GEO-DX-001-20260824-01/query-label-corrections.csv",
+    "timing_qc": "measurement-runs/MC-BHYY-GEO-DX-001-20260824-01/timing-qc.csv",
+    "scored_samples": "project-records/03_手机实测评分台账_G3冻结版_2026-08-26.csv"
+  },
+  "frozen_results": {
+    "g3_approval": "project-records/03_G3负责人批准记录_2026-08-26.md",
+    "g3_summary": "project-records/03_手机实测结果摘要_G3冻结版_2026-08-26.md",
+    "g5_weekly": "project-records/05_流程评估周报_G5冻结版_2026-08-27.md"
+  },
+  "independent_reviews": [
+    "source-materials/review-history/R0032_审核成员Core样本正式复核通过回传_2026-08-26.md",
+    "source-materials/review-history/R0035_审核成员G2完整审核通过回传_2026-08-27.md",
+    "source-materials/review-history/R0038_审核成员G5完整审核通过回传_2026-08-27.md"
+  ],
+  "limitations": [
+    "本轮时间证据不完整，不形成客户正式基线",
+    "腾讯元宝R1四个题号仅纠正分析元数据，原始图片不改",
+    "平台回答中的未核验事实不作为医院事实",
+    "本轮结果不代表现实医院名称认证或稳定推荐"
+  ]
+}

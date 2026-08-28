@@ -3,17 +3,18 @@
   "vault": "binhai-hospital-geo-diagnosis",
   "pending": [],
   "current_docs": [
-    "source-materials/review-history/R0041_审核成员G4完整复核通过回传_2026-08-28.md",
-    "working-documents/06_负责人G4批准任务单_2026-08-28.md",
-    "working-documents/06_流程评估诊断报告_G4前草稿_2026-08-27.md",
-    "working-documents/06_平台指标汇总_G4前草稿_2026-08-27.csv",
-    "working-documents/06_样本覆盖汇总_G4前草稿_2026-08-27.csv",
-    "working-documents/06_证据与来源清单_G4前草稿_2026-08-27.json",
-    "working-documents/06_交付物清单_G4前草稿_2026-08-27.csv",
-    "working-documents/06_验收单_G4前草稿_2026-08-27.md"
+    "project-records/06_G4负责人批准记录_2026-08-28.md",
+    "project-records/06_流程评估诊断报告_G4冻结版_2026-08-28.md",
+    "project-records/06_平台指标汇总_G4冻结版_2026-08-28.csv",
+    "project-records/06_样本覆盖汇总_G4冻结版_2026-08-28.csv",
+    "project-records/06_证据与来源清单_G4冻结版_2026-08-28.json",
+    "project-records/06_交付物清单_G4冻结版_2026-08-28.csv",
+    "project-records/06_验收单_G4冻结版_2026-08-28.md",
+    "project-records/06_项目移交与归档记录_2026-08-28.md",
+    "working-documents/06_流程评估最终交付与归档包_2026-08-28.zip"
   ],
   "locks": [],
-  "raw_count": 41,
+  "raw_count": 42,
   "public": {
     "raw": "source-materials/",
     "formal": "project-records/formal-manifest.csv",

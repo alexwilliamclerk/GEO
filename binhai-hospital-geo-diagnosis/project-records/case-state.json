@@ -1,8 +1,8 @@
 {
   "case_id": "泌尿诊断A",
   "stage": "06",
-  "waiting": "human",
-  "activity": "stage06_g4_review_passed_waiting_w_decision",
+  "waiting": "none",
+  "activity": "project_archived_internal_process_evaluation_complete",
   "current_member": "W",
   "profiles": {
     "W": {
@@ -153,14 +153,21 @@
     "g5_status": "approved",
     "g5_approval_raw_id": "R0039",
     "g5_review_raw_id": "R0038",
-    "stage06_delivery_status": "draft_accepted_by_w_waiting_g4_review",
+    "stage06_delivery_status": "frozen_g4_approved",
     "stage06_owner_acceptance_raw_id": "R0040",
-    "stage06_g4_status": "review_complete_waiting_w_decision",
+    "stage06_g4_status": "approved",
     "stage06_g4_review_transfer_id": "X0014",
     "stage06_g4_review_package_checksum": "661735E9D513B5EB195922C11F011DA8BA9584D93722D1B434A3A2B6FB16F3C7",
     "stage06_g4_review_raw_id": "R0041",
     "stage06_g4_review_result": "通过",
-    "stage06_customer_role_enabled": false
+    "stage06_g4_approval_raw_id": "R0042",
+    "stage06_internal_acceptance": true,
+    "stage06_customer_formal_acceptance": false,
+    "stage06_customer_role_enabled": false,
+    "stage06_archive_status": "complete",
+    "stage06_final_package": "working-documents/06_流程评估最终交付与归档包_2026-08-28.zip",
+    "stage06_final_package_checksum": "2B9FF36E27F97BDCD37AB414602455D9D6A54FA1ABA9FB839C0DC444240A8ED6",
+    "project_status": "archived_internal_process_evaluation_complete"
   },
   "gates": {
     "G0": {
@@ -204,6 +211,12 @@
       "by": "W",
       "at": "2026-08-27T15:55:31Z",
       "basis": "R0038完整审核通过；R0039负责人正式批准；05无干预控制冻结"
+    },
+    "G4": {
+      "status": "approved",
+      "by": "W",
+      "at": "2026-08-28T06:00:40Z",
+      "basis": "R0041完整复核通过；R0042负责人正式批准；06交付文件冻结并完成内部验收"
     }
   },
   "log": [
@@ -926,6 +939,45 @@
       "stage": "06",
       "current_member": "W",
       "note": "负责人G4批准任务单已生成；未自动批准"
+    },
+    {
+      "at": "2026-08-28T06:00:40Z",
+      "op": "source_register",
+      "raw_ids": ["R0042"],
+      "stage": "06",
+      "note": "登记负责人G4正式批准原话"
+    },
+    {
+      "at": "2026-08-28T06:00:40Z",
+      "op": "gate",
+      "gate": "G4",
+      "status": "approved",
+      "member": "W",
+      "basis": "R0041-R0042"
+    },
+    {
+      "at": "2026-08-28T06:00:40Z",
+      "op": "delivery_freeze",
+      "stage": "06",
+      "document_count": 6,
+      "note": "报告指标覆盖证据清单交付物清单和验收单按G4冻结"
+    },
+    {
+      "at": "2026-08-28T06:00:40Z",
+      "op": "internal_acceptance",
+      "stage": "06",
+      "result": "accepted",
+      "customer_formal_acceptance": false,
+      "note": "只代表本轮流程评估内部接收；未知客户角色未启用"
+    },
+    {
+      "at": "2026-08-28T06:00:40Z",
+      "op": "archive",
+      "stage": "06",
+      "status": "complete",
+      "package": "06_流程评估最终交付与归档包_2026-08-28.zip",
+      "package_checksum": "2B9FF36E27F97BDCD37AB414602455D9D6A54FA1ABA9FB839C0DC444240A8ED6",
+      "note": "项目内交付移交与归档完成；未来正式诊断需新建测量运行"
     }
   ]
 }
