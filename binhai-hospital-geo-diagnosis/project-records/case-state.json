@@ -2,8 +2,8 @@
   "case_id": "泌尿诊断A",
   "stage": "06",
   "waiting": "human",
-  "activity": "stage06_g4_review_package_ready_waiting_l",
-  "current_member": "L",
+  "activity": "stage06_g4_review_passed_waiting_w_decision",
+  "current_member": "W",
   "profiles": {
     "W": {
       "member": "W",
@@ -29,10 +29,10 @@
     }
   },
   "review": {
-    "current_id": "R0038",
+    "current_id": "R0041",
     "current_result": "通过",
-    "current_stage": "05",
-    "current_checksum": "0A63810C8607B5A3AE5CD90B91246D59A74FEB1FC9ACF0E259BF9AC446473319",
+    "current_stage": "06",
+    "current_checksum": "34F2740B4B244BA40E7362AEB5A0A96F0739B2C2116127B415F8DCC0B13DE4B7",
     "current_record_checksum": "",
     "seq": 1,
     "attempts": {
@@ -41,7 +41,8 @@
       "07": 2,
       "08": 1,
       "04": 1,
-      "05": 1
+      "05": 1,
+      "06": 1
     },
     "failures": {}
   },
@@ -154,9 +155,11 @@
     "g5_review_raw_id": "R0038",
     "stage06_delivery_status": "draft_accepted_by_w_waiting_g4_review",
     "stage06_owner_acceptance_raw_id": "R0040",
-    "stage06_g4_status": "waiting_l_review",
+    "stage06_g4_status": "review_complete_waiting_w_decision",
     "stage06_g4_review_transfer_id": "X0014",
     "stage06_g4_review_package_checksum": "661735E9D513B5EB195922C11F011DA8BA9584D93722D1B434A3A2B6FB16F3C7",
+    "stage06_g4_review_raw_id": "R0041",
+    "stage06_g4_review_result": "通过",
     "stage06_customer_role_enabled": false
   },
   "gates": {
@@ -892,6 +895,37 @@
       "package": "06_审核成员G4独立复核材料包_2026-08-28.zip",
       "package_checksum": "661735E9D513B5EB195922C11F011DA8BA9584D93722D1B434A3A2B6FB16F3C7",
       "note": "17份材料；L只复核交付数字证据限制和验收状态，不重新手机采集或评分；回传后由W决定G4"
+    },
+    {
+      "at": "2026-08-28T05:45:29Z",
+      "op": "source_register",
+      "raw_ids": ["R0041"],
+      "stage": "06",
+      "note": "登记审核成员签署的G4完整复核通过回传"
+    },
+    {
+      "at": "2026-08-28T05:45:29Z",
+      "op": "review_receive",
+      "raw_id": "R0041",
+      "transfer_id": "X0014",
+      "stage": "06",
+      "result": "通过",
+      "note": "18项全部勾选，五项质量全部通过，必改项和待确认项均无，允许W决定G4"
+    },
+    {
+      "at": "2026-08-28T05:45:29Z",
+      "op": "transfer_receive",
+      "transfer_id": "X0014",
+      "status": "completed_received",
+      "note": "G4独立复核已完成；当前等待W最终批准或驳回G4"
+    },
+    {
+      "at": "2026-08-28T05:45:29Z",
+      "op": "owner_gate_task_ready",
+      "gate": "G4",
+      "stage": "06",
+      "current_member": "W",
+      "note": "负责人G4批准任务单已生成；未自动批准"
     }
   ]
 }
