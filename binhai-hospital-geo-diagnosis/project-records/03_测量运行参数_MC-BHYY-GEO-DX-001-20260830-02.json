@@ -1,0 +1,33 @@
+{
+  "measurement_config_id": "MC-BHYY-GEO-DX-001-20260830-02",
+  "project_id": "BHYY-GEO-DX-001",
+  "client_code": "BHYY-A",
+  "run_type": "location_prompt_correction_process_evaluation",
+  "test_run_count": 2,
+  "supersedes_measurement_config_id": "MC-BHYY-GEO-DX-001-20260824-01",
+  "change_raw_id": "R0043",
+  "location_prefix": "我在福建泉州水头",
+  "product_mode": "standard",
+  "platforms": [
+    "app_doubao",
+    "app_tongyi",
+    "app_deepseek",
+    "app_yuanbao"
+  ],
+  "session_mode": "new_cold_conversation_per_query",
+  "followup_allowed": false,
+  "query_ids": ["Q01", "Q02", "Q03", "Q04", "Q05"],
+  "primary_endpoint_query_ids": ["Q01", "Q02", "Q03", "Q04"],
+  "monitor_query_ids": ["Q05"],
+  "rounds_per_platform": 5,
+  "round_interval_hours_min": 3,
+  "planned_app_sessions": 100,
+  "rerun_safety_or_branded_fact_groups": false,
+  "competitor_freeze_id": "CF-BHYY-GEO-DX-001-20260824-01",
+  "fact_source_raw_id": "R0024",
+  "previous_run_results_current": false,
+  "real_world_name_certification": false,
+  "formal_client_baseline": false,
+  "mobile_testing_allowed_after_package_delivery": true,
+  "blocking_conditions": []
+}

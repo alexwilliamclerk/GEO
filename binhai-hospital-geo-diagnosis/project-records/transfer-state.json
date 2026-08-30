@@ -1,20 +1,18 @@
 {
   "case_id": "泌尿诊断A",
   "vault": "binhai-hospital-geo-diagnosis",
-  "pending": [],
+  "pending": ["X0015"],
   "current_docs": [
-    "project-records/06_G4负责人批准记录_2026-08-28.md",
-    "project-records/06_流程评估诊断报告_G4冻结版_2026-08-28.md",
-    "project-records/06_平台指标汇总_G4冻结版_2026-08-28.csv",
-    "project-records/06_样本覆盖汇总_G4冻结版_2026-08-28.csv",
-    "project-records/06_证据与来源清单_G4冻结版_2026-08-28.json",
-    "project-records/06_交付物清单_G4冻结版_2026-08-28.csv",
-    "project-records/06_验收单_G4冻结版_2026-08-28.md",
-    "project-records/06_项目移交与归档记录_2026-08-28.md",
-    "working-documents/06_流程评估最终交付与归档包_2026-08-28.zip"
+    "project-records/03_地域前缀变更与阶段回退记录_2026-08-30.md",
+    "project-records/03_测量问题配置_MC-BHYY-GEO-DX-001-20260830-02.csv",
+    "project-records/03_测量运行参数_MC-BHYY-GEO-DX-001-20260830-02.json",
+    "project-records/transfers/X0015_03_审核成员手机地域修正实测任务单_2026-08-30.md",
+    "working-documents/03_审核成员手机地域修正实测任务单_2026-08-30.md",
+    "working-documents/03_手机地域修正实测记录表_2026-08-30.csv",
+    "working-documents/03_审核成员手机地域修正实测材料包_2026-08-30.zip"
   ],
   "locks": [],
-  "raw_count": 42,
+  "raw_count": 43,
   "public": {
     "raw": "source-materials/",
     "formal": "project-records/formal-manifest.csv",
